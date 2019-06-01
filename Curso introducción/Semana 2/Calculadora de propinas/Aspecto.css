@@ -1,0 +1,43 @@
+body {
+	background:linear-gradient(#e00d0d,#291419);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family:"Calibri";
+	font-size:25px;
+	}
+h1{
+	text-transform: uppercase;
+}
+.Cajita {
+	width: 500px;
+	background: white;
+	padding: 15px 30px;
+	box-sizing: border-box;
+	box-shadow: 20px 20px 20px -8px #000;
+	border-radius: 10px;
+	text-align: center;
+}
+form {
+	text-align: left;
+}
+.apart {
+	font-size: 18px;
+}
+button {
+    background: #57b00e;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 10px 60px;
+    padding: 15px 15px;
+    width: 75%;
+}
+.end1 {
+	font-size: 24px;
+	color: #57b00e;
+}
+.end2 {
+	font-size: 32px;
+}

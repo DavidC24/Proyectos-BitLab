@@ -1,0 +1,20 @@
+body {
+  font-family: Calibri;
+  text-shadow: 2px 2px black; 
+  color: white;
+  background-image: url(AstronautaenelEspacio.jpg);
+  background-position: center center;
+  background background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
+h1  {
+	color: deepskyblue;
+	text-align: center;
+	text-shadow: 3px 3px gray;
+	font-size: 40px;
+	}
+	
+.texto {
+  font-size: 20px

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora de propinas</title>
+	<link rel="stylesheet" type="text/css" href="Aspecto.css">
+</head>
+<body marginheight=50>
+<div class="Cajita">
+	<h1>Calculadora de propinas</h1>
+	<div id="Calculadora">
+	<form>
+		<label>¿Cuál es tu propina?<br>
+			$ <input class="apart" type="text" id="Cantidad"><br><br>
+		</label>
+		<label>Calidad del servicio<br>
+		<select class="apart" id="Calidad">
+			<option>¿Cómo fue la calidad de tu servicio?</option>
+			<option value="0.3">30% (¡Excelente!)</option>
+			<option value="0.2">20% (Bueno)</option>
+			<option value="0.15">15% (Pudo estar mejor)</option>
+			<option value="0.1">10% (Malo)</option>
+			<option value="0.5">5% (Horrible)</option>
+		</select><br><br>
+		</label>
+		<label>¿Cuántas personas comparten la propina?<br>
+			<input class="apart" type="number" id="Gentetotal"> personas
+		</label><br><br>
+		<button type="button" id="Calcular">Calcular</button>
+	</form>
+</div>
+<div id="Propinatotal"></div>
+    <h3>Propina</h3>
+    <sup class="end1">$</sup><span class="end2" id="Todo">0.00</span>
+    <small id="Total">Total</small><br>
+    <sup class="end1">$</sup><span class="end2" id="Paga">0.00</span>
+    <small id="Cada">Cada uno</small>
+</div>
+</div>
+<script type="text/javascript" src="Codigo.js"></script>
+</body>
+</html>

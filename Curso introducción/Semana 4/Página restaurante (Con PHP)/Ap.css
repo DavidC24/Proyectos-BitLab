@@ -1,0 +1,21 @@
+body {
+	font-family: Calibri;
+	text-shadow: 1px 1px black;
+	background-image: url(Brick-wall-background-texture_2560x1440.jpg);
+  background-position: center center;
+  background background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.unnecessary {
+	text-shadow: none;
+}
+
+.m-3 {
+  margin: $spacer !important;
+}
+
+.card-title {
+	text-shadow: 1px 1px black;
+}

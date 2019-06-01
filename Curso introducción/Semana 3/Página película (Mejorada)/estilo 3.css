@@ -1,0 +1,32 @@
+body {
+  font-family: Calibri; 
+  font-size: 22px;
+  color: white;
+  text-shadow: 2px 2px black;
+  background-image: url(detective-pikachu-ryme-city-pelicula-poster-1544807471.jpg);
+  background-position: center center;
+  background background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
+ h1 {
+ 	font-size:56px;
+ 	text-shadow:3px 3px blue;
+ 	color:gold;
+ 	font-style:italic; 
+ 	}
+
+.m-3 {
+  margin: $spacer !important;
+}
+
+.final {
+	color: gold;
+	text-shadow: 2px 2px blue;
+	font-style: italic;
+}
+
+#exampleModal {
+  text-shadow: none;
+}
