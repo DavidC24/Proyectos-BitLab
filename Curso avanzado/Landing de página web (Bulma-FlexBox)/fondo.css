@@ -1,0 +1,21 @@
+.header-image {
+	background-image: url(324950.jpg);
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#NavElementos {
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+div.is-centered{
+	text-align: center;
+}
+.hero-body {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+img.sample,.button {
+	box-shadow: 5px 5px 5px -5px black;
+}
