@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:,400,700,700i|Montserrat:500,700&display=swap');
+
+body {
+    font-size: 18px;
+}
+h1,h2,h3 {
+    font-family: "Montserrat","sans-serif"; 
+}
+p {
+    font-family: "Lato","sans-serif";
+}
+.navscroll {
+    background-color:transparent;
+    transition:background-color 250ms;
+}
+.navscroll.blanco {
+    background-color:white;
+}
+#navmenu {
+    right: 0;
+    top: 0;
+}
+.nohref {
+    cursor: pointer;
+}
+.elementos {
+    line-height: 4em;
+    color: white;
+    transition: .30s;
+    border-bottom: 3px solid transparent;
+}
+.elementos.negro {
+    color: black;
+}
+.elementos:hover {
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(154, 222, 228);
+}
+#elementos {
+    color: gray;
+}
+#elementos:hover {
+    color: black;
+}
+#anvorguesa {
+    cursor: pointer;
+}
+#equis {
+    cursor: pointer;
+}
+#welcome {
+    background-image: url(hmpg/mac.png);
+}
+#btnwelcome {
+    background-color: transparent;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 4px;
+    transition: .12s;
+}
+#btnwelcome:hover {
+    background-color: white;
+    color: #2d3748;
+}
+#aprende {
+    font-weight: 700;
+    line-height: 45px;
+}
+#cursos {
+    color: #481AE7;
+}
+#carta {
+    border: 1px solid transparent;
+    transition: .50s;
+}
+#carta:hover {
+    border: 1px solid #481AE7;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5);
+}
+.hover {
+    transition: .50s;
+}
+.hover:hover {
+    transition: .50s;
+    background-color: #481AE7;
+    color: white;
+}
+#img {
+    object-fit: cover;
+}
+#carta2 {
+    transition: .50s;
+}
+#carta2:hover {
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5);
+}
+#carta2A {
+    transition: .50s;
+}
+#carta2A:hover {
+    border: 1px solid #481AE7;
+    border-radius: 2px;
+}
+#btncarta {
+    background-color: transparent;
+    color: #481AE7;
+    border-width: 2px;
+    border-color: #481AE7;
+    border-radius: 4px;
+    transition: .12s;
+}
+#btncarta:hover {
+    background-color: #481AE7;
+    color: white;
+}
+@media screen and (max-width: 640px) {
+#noticias {
+    background-size: 600px;
+    background-position-y: 40px;
+    background-position-x: -50px;
+}
+}
+@media screen and (max-width: 768px) {
+#noticias {
+    background-size: 700px;
+    background-position-y: 80px;
+    background-position-x: -50px;
+}
+}
+#noticias {
+    background-image: url(hmpg/noticia.png);
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+}
+#foot {
+    background-color: #070512;
+}

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Backend Developer - curso intensivo</title>
+    <link rel="Shortcut Icon" href="BITLAB.ico" type="image/x-icon"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Estilos/dtls.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navscroll fixed w-full flex justify-between py-6 sm:py-0 lg:px-4 xl:px-16 px-2">
+            <div id="navmenu" class="hidden w-full h-screen fixed overflow-hidden">
+                <div class="bg-white h-full p-10">
+                    <div class="flex justify-between mb-12">
+                        <a href="index.html"><img src="Estilos/svg/BITLAB_Azul.svg" width="120" height="25"></a>
+                        <div>
+                            <img id="equis" src="Estilos/svg/Equis_Azul.svg">
+                        </div>
+                    </div>
+                    <h3 id="aprende" class="text-4xl mb-6">¿Qué deseas<br>conocer?</h3>
+                    <div class="flex flex-col">
+                        <a href="prtnrs.html" id="elementos" class="block text-xl font-medium mt-4 py-4 mr-4">Aliados</a>
+                        <a href="crss.html" class="seleccionadoA block text-xl font-medium mt-4 py-4 mr-4">Cursos</a>
+                        <a href="bcs.html" id="elementos" class="block text-xl font-medium mt-4 py-4 mr-4">Becas</a>
+                        <a href="evnts.html" id="elementos" class="block text-xl font-medium mt-4 py-4 mr-4">Eventos</a>
+                    </div>
+                </div>
+            </div> 
+            <div id="navmenu2" class="w-full main-menu course-menu py-5 bg-white text-black fixed">
+                <div class="px-6">
+                    <div class="h-auto flex flex-row justify-between items-center">
+                        <div class="flex">
+                            <a href="crss.html"><img src="Estilos/svg/B.svg" width="40" height="40" class="mr-4"></a>
+                            <div>
+                                <h3 class="text-lg font-bold leading-snug">Desarrollo web - Backend</h3>
+                                <p class="text-sm font-thin">Desarrollo de software</p>
+                            </div>
+                        </div>
+                        <div class="text-sm font-semibold mr-24">
+                            <a href="#¿como?" class="select mx-6">¿Cómo aprenderás?</a>
+                            <a href="#programa" class="select mx-6">Programa</a>
+                            <a href="#horario" class="select mx-6">Horario</a>
+                            <a href="#entrenador" class="select mx-6">Entrenador</a>
+                            <a href="#pago" class="select mx-6">Pago</a>
+                            <a href="" id="btn" class="text-sm font-semibold pt-1 pb-2 px-5">Inscríbete ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center text-white px-2 sm:px-6">
+                    <a href="index.html"><img id="blanco" src="Estilos/svg/BITLAB.svg" width="115" height="25"/></a>
+            </div>
+            <div class="w-full hidden sm:inline-block lg:flex sm:items-center sm:w-auto">
+                <div class="font-medium pt-2">
+                    <a href="prtnrs.html" class="elementos block sm:inline-block my-0 px-6 py-1">Aliados</a>
+                    <a href="crss.html" class="elementos seleccionadoB block sm:inline-block my-0 px-6 py-1">Cursos</a>
+                    <a href="bcs.html" class="elementos block sm:inline-block my-0 px-6 py-1">Becas</a>
+                    <a href="evnts.html" class="elementos block sm:inline-block my-0 px-6 py-1">Eventos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="block sm:hidden">
+                <div class="flex items-center px-2">
+                    <img id="anvorguesa" src="Estilos/svg/Anvorguesa.svg">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="entrada" class="flex flex-col lg:flex-row items-center">
+        <div class="xl:pt-32 pt-48 pb-48">
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:w-1/2 xl:w-full px-5 mb-16 lg:mb-0 md:px-10 lg:pr-16 xl:pl-20 xl:mt-20">
+                    <div class="text-white">
+                        <p id="aprende" class="text-4xl mt-4 mb-6">Desarrollo web - Backend</p>
+                        <div class="flex mb-8 items-center flex-wrap">
+                            <div class="font-bold text-lg flex items-center mr-6 md:mr-40 lg:mr-12 xl:mr-32 mb-8">
+                                <img src="Estilos/svg/reloj.svg" width="25" height="25" class="mr-4">3 meses
+                            </div>
+                            <div class="font-bold text-lg flex items-center mr-6 mb-8">
+                                <img src="Estilos/svg/beca.svg" width="35" height="25" class="mr-4">Beca disponible
+                            </div>
+                        </div>
+                        <p class="mb-8 md:text-left lg:text-justify xl:text-left pr-4 md:mr-12 lg:mr-6">Con este curso podrás desarrollar backends del mundo real usando las últimas tecnologías usadas en la industria.<br>Lograrás realizar backends comprendiendo el MVC, además, tendrás los conceptos básicos para desarrollar aplicativos usando PHP con Laravel y Ruby On Rails.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 xl:w-full md:ml-64 lg:ml-0">
+                    <img src="Estilos/crsdtls/Backend.png" class="hidden md:flex md:pl-32 lg:pl-0">
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section id="¿como?" class="flex flex-col lg:flex-row items-center">
+        <div class="xl:pt-32 pt-32">
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:w-1/2 xl:w-full px-12 mb-16 lg:mb-0 md:px-10 lg:pr-16 xl:pl-20">
+                    <div>
+                        <h1 id="aprende" class="text-4xl mt-4 mb-16">¿Cómo aprenderás?</h1>
+                        <p class="mb-12 pr-4 md:mr-12 lg:mr-6"><strong>Aprende técnicas de los mejores.</strong><br>Impartido por instructores con experiencia trabajando en el campo, aprende los conceptos, habilidades y herramientas más demandados.</p>
+                        <p class="mb-12 pr-4 md:mr-12 lg:mr-6"><strong>Proyectos prácticas para tu portafolio.</strong><br>Trabaja en proyectos en un entorno de colaboración para aplicar nuevos conceptos y técnicas y así desarrollar tus habilidades.</p>
+                        <p class="pr-4 md:mr-12 lg:mr-6"><strong>Requisitos: </strong>Haber completado el curso de introducción al desarrollo impartido por BitLab. No es necesario traer tu propio equipo.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 xl:w-full md:ml-64 lg:ml-0">
+                    <img src="Estilos/crsdtls/B_aprende.png" class="px-8 md:flex md:pl-32 lg:pl-0">
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section id="programa">
+        <div class="mx-4 md:mx-10 xl:mx-24 pt-48">
+            <h1 id="aprende" class="xl:text-center text-4xl mb-20">Programa del curso</h1>
+            <div class="flex flex-col md:flex-row justify-center">
+                <div class="w-1/2 mx-6">
+                    <ul class="flex flex-wrap justify-center text-left w-full">
+                        <li class="etiqueta pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana1" class="text-xl">Semana 1</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana1" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">¿Qué es PHP?</div>
+                                    <div class="mb-4">Setup y herramientas</div>
+                                    <div class="mb-4">Sintaxis de PHP</div>
+                                    <div class="mb-4">Programación orientada a objetos</div>
+                                    <div class="mb-4">Composer</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana2" class="text-xl">Semana 2</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana2" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">Base de datos SQL: MySQL, MariaDB, PostgreSQL</div>
+                                    <div class="mb-4">Tipos de datos</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana3" class="text-xl">Semana 3</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana3" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">Conexión a base de datos usando PHP</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana4" class="text-xl">Semana 4</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana4" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">Crear una API en Rest</div>
+                                    <div class="mb-4">Deploy en Heroku</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana5" class="text-xl">Semana 5</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana5" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">¿Qué es un framework?</div>
+                                    <div class="mb-4">Migraciones en Artasian</div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana6" class="text-xl">Semana 6</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana6" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">Desarrollo de CMS + API</div>
+                                    <div class="mb-4">Creando un plan de trabajo usando ASANA</div>
+                                    <div class="mb-4">API REST</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-1/2 mx-6">
+                    <ul class="flex flex-wrap justify-center text-left w-full">
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana7" class="text-xl">Semana 7</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana7" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">¿Qué es Ruby?</div>
+                                    <div class="mb-4">Métodos privados</div>
+                                    <div class="mb-4">Clases</div>
+                                    <div class="mb-4">Variables y poliformismo</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana8" class="text-xl">Semana 8</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana8" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">¿Qué es Rails?</div>
+                                    <div class="mb-4">¿Qué son y para qué sirven las gemas?</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana9" class="text-xl">Semana 9</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana9" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">Administración de variables del homepage</div>
+                                    <div class="mb-4">Conexión de backend con frontend</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana10" class="text-xl">Semana 10</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana10" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">Desarrollo de CMS + API para cnn.com usando un admin template y Ruby On Rails</div>
+                                    <div class="mb-4">Gestor de usuario</div>
+                                    <div class="mb-4">Gestor de noticias</div>
+                                    <div class="mb-4">Tipos de noticias</div>
+                                    <div class="mb-4">Categorías</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana11" class="text-xl">Semana 11</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana11" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">Cloud servers</div>
+                                    <div class="mb-4">Diferencia entre Google Cloud, Amazon Web Service y Heroku</div>
+                                    <div class="mb-4">Deploy en Google Cloud</div>
+                                    <div class="mb-4">Deploy en AWS</div>
+                                    <div class="mb-4">Deploy en Azure</div>
+                                    <div class="mb-4">Deploy en Heroku</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-10 w-full">
+                            <div class="semanasA flex py-3 px-5">
+                                <a id="semana12" class="text-xl">Semana 12</a>
+                            </div>
+                            <div class="semanasB">
+                                <div id="bodysemana12" class="hidden ml-5 leading-tight">
+                                    <div class="mb-4">¿Cuánto vale mi trabajo?</div>
+                                    <div class="mb-4">Venta por costo por hora o costo fijo</div>
+                                    <div class="mb-4">Freelance internacional</div>
+                                    <div class="mb-4">Pulir mi portafolio y CV para una entrevista de trabajo</div>
+                                    <div class="mb-4">Visita a las instalaciones de Elaniin - Tech Company para un foro de preguntas y respuestas con programadores con años de experiencia</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class=" items-center">
+            <div class="flex flex-col xl:flex-row-reverse px-8 pt-48">
+                <div class="w-full xl:w-1/2 text-xl mb-20 md:px-10 xl:pl-0 xl:pr-12">
+                    <h2 id="aprende" class="text-3xl mb-8">Proyecto final</h2>
+                    <p class="mb-12 leading-snug">Crearás un repositorio en GitHub. Desarrollo e implementación de una API, desarrollo de Aplicaciones utilizando FrameWork Laravel y Framework Ruby on Rails, implementación de Aplicaciones en Cloud Platform: Heroku , Google y Amazon.</p>
+                    <a href="" id="btn" class="text-sm py-3 px-10">Inscríbete ahora</a>
+                </div>
+                <div class="w-full xl:w-1/3 mb-20 xl:mr-56">
+                    <img src="Estilos/crsdtls/B_proyecto.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="horario">
+        <div class="px-8 pt-32 pb-40">
+            <h3 id="aprende" class="text-4xl text-center mb-20 px-4">Horarios del curso</h3>
+            <div>
+                <div class="w-full lg:w-1/3 flex flex-row justify-center mx-auto bg-gray-200 py-8">
+                    <div>
+                        <p class="mt-3 lg:mr-16">Lunes, Miércoles y Viernes</p>
+                    </div>
+                    <div class="border-l-2 border-gray-300 pl-6">
+                        <p class="text-xl leading-tight">1:00 pm -<br>4:00 pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="entrenador">
+        <div class="pt-4 flex items-center flex-col-reverse lg:flex-row">
+            <div class="w-full lg:w-1/2 xl:ml-auto">
+                <div class="sm:pl-12">
+                    <div class="ml-auto mb-0">
+                        <img src="Estilos/trnrs/rox.jpg" class="bg-cover bg-no-repeat">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 ml-auto p-16 lg:px-0 text-white leading-tight">
+                <div class="lg:pl-16 lg:pr-40 md:pr-16">
+                    <h2 id="aprende" class="text-3xl mb-4">Conoce a tu entrenador</h2>
+                    <p id="aprende" class="tex-lg mb-6">Roxana González</p>
+                    <p class="mb-4">Fullstack Developer y entrenadora en Bitlab. Le gusta poner a prueba su creatividad y conocer nuevas tecnologías.</p>
+                    <p class="mb-4">Cuenta con más de seis años programando. Creando sitios web, desde landing pages que nunca se lanzaron, hasta sitios e-commerce de tiendas nacionales como internacionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-200 pt-32 text-center">
+        <h2 id="aprende" class="text-4xl px-4 mb-12">Testimonios de profesionales del rubro</h2>
+        <div class="flex justify-center">
+            <div class="carrousel w-4/5 xl:w-1/2">
+                <div>
+                    <div class="text-xl text-gray-700 font-semibold mb-5 italic">
+                        La programación me permitió empezar una empresa, desarrollo desde los 18 años
+                    </div>
+                    <div class="mb-8">
+                        Nelson Chicas - Kadevjo CEO
+                    </div>
+                </div>
+                <div>
+                    <div class="text-xl text-gray-700 font-semibold mb-5 italic">
+                        La programación me enseñó a que existen muchas manesras de resolver un problema, a pensar de forma abstracta, y que el único límite es la imaginación, programo desde los 9 años
+                    </div>
+                    <div class="mb-8">
+                        John Cruz - Full Stack Developer
+                    </div>
+                </div>
+                <div>
+                    <div class="text-xl text-gray-700 font-semibold mb-5 italic">
+                        El desarrollar me dio una oportunidad de desarrollo profesional, ha sido mi primera plaza laboral y desde entonces mientras más aprendo, más crezco a nivel personal y laboral. Programo desde los 19 años 
+                    </div>
+                    <div class="mb-8">
+                        Rony Almendarez - Desarrollador Inbound
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section id="pago">
+        <div class="px-4 pt-32 lg:ml-20">
+            <div class="mb-8 flex lg:items-center">
+                <h2 id="aprende" class="text-4xl lg:mr-12">Formas de pago</h2>
+            </div>
+            <div class="flex justify-between bg-gray-200 p-8">
+                <p class="text-xl font-semibold">Beca disponible</p> 
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="xl:pt-32 lg:pb-20 pt-32">
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:w-1/2 xl:w-full px-6 md:px-12 mb-16 lg:mb-0 md:px-8 lg:pr-12 xl:pl-20">
+                    <div>
+                        <h1 id="aprende" class="text-4xl mt-24 mb-4">Nuestra ubicación</h1>
+                        <p class="mb-12 md:mb-8 lg:mb-40 xl:mb-40 xl:pr-16">9 Calle Poniente, 99 Avenida Norte #548, Colonia Escalón, El Salvador.</p>
+                    </div>
+                </div>
+                <div id="map" class="lg:w-2/3 xl:w-full mb-32 md:mb-56 lg:mb-0 mx-auto lg:ml-0">
+                        <script>
+                        function initMap() {
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                            center: {lat: 13.7086863, lng: -89.2469662},
+                            zoom: 18,
+                            styles:[
+                                {
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                    {
+                                        "color": "#2d0059"
+                                    },
+                                    {
+                                        "weight": 8
+                                    }
+                                    ]
+                                },
+                                {
+                                    "elementType": "geometry.stroke",
+                                    "stylers": [
+                                    {
+                                        "color": "#2d0059"
+                                    },
+                                    {
+                                        "visibility": "off"
+                                    },
+                                    {
+                                        "weight": 2
+                                    }
+                                    ]
+                                },
+                                {
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                    {
+                                        "color": "#ac59ff"
+                                    },
+                                    {
+                                        "visibility": "simplified"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative.country",
+                                    "elementType": "geometry.stroke",
+                                    "stylers": [
+                                    {
+                                        "color": "#36006c"
+                                    },
+                                    {
+                                        "visibility": "on"
+                                    },
+                                    {
+                                        "weight": 2
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative.country",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                    {
+                                        "color": "#6a6a35"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative.province",
+                                    "elementType": "geometry.stroke",
+                                    "stylers": [
+                                    {
+                                        "color": "#2d0059"
+                                    },
+                                    {
+                                        "visibility": "on"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "landscape.man_made",
+                                    "stylers": [
+                                    {
+                                        "color": "#440088"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "poi.park",
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                    {
+                                        "color": "#183d2d"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "poi.park",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                    {
+                                        "color": "#399366"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                    {
+                                        "color": "#8f20ff"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.arterial",
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                    {
+                                        "color": "#4e009b"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.arterial",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                    {
+                                        "color": "#97d0ff"
+                                    },
+                                    {
+                                        "visibility": "simplified"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway",
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                    {
+                                        "color": "#a448ff"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway",
+                                    "elementType": "labels.icon",
+                                    "stylers": [
+                                    {
+                                        "visibility": "on"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway.controlled_access",
+                                    "elementType": "labels.icon",
+                                    "stylers": [
+                                    {
+                                        "visibility": "on"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.local",
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                    {
+                                        "color": "#8f20ff"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.local",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                    {
+                                        "color": "#97d0ff"
+                                    },
+                                    {
+                                        "visibility": "simplified"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit.station",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                    {
+                                        "color": "#ffb340"
+                                    }
+                                    ]
+                                },
+                                {
+                                    "featureType": "water",
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                    {
+                                        "color": "#001c20"
+                                    }
+                                    ]
+                                }
+                                ]
+                                
+                            });
+                            var marker = new google.maps.Marker({
+                            position: {lat: 13.7086863, lng: -89.2469662},
+                            map: map,
+                            title:"Hello World!"
+                        });
+                    }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <footer>
+        <div id="foot">
+            <div class="h-auto md:h-16 flex flex-col md:flex-row justify-between items-center mx-8">
+                <img src="Estilos/svg/BITLAB.svg" class="h-6 mt-8 md:mt-0 lg:pl-12">
+                <p class="text-white mt-6 ml-4 md:mt-0">Todos los derechos reservados, 2019 © BITLAB</p>
+                <div class="flex m-4 md:my-0 items-center">
+                    <img src="Estilos/hmpg/phone.png" width="20" height="20" class="mr-3">
+                    <a href="" class="text-white mr-3">2200-4197</a>
+                    <a id="facebook" href=""><img id="cambioF" src="Estilos/svg/facebook.svg" class="ml-4" width="20" height="20"></a>
+                    <a id="instagram" href=""><img id="cambioI" src="Estilos/svg/instagram.svg" class="ml-6" width="20" height="20"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe0QpacAYcGfGs0JF2syWnYtsu0hJ69Nk&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Scripts/dtls.min.js"></script>
+</body>
+</html>   

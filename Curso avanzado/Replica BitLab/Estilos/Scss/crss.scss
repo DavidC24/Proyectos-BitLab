@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:,400,700,700i|Montserrat:500,700&display=swap');
+
+body {
+    font-size: 18px;
+}
+h1,h2,h3 {
+    font-family: "Montserrat","sans-serif"; 
+}
+p {
+    font-family: "Lato","sans-serif";
+}
+.navscroll {
+    background-color:transparent;
+    transition:background-color 250ms;
+}
+.navscroll.blanco {
+    background-color:white;
+}
+#navmenu {
+    right: 0;
+    top: 0;
+}
+.elementos {
+    line-height: 4em;
+    color: black;
+    transition: .30s;
+    border-bottom: 3px solid transparent;
+}
+.seleccionadoA {
+    color: black;
+    border-bottom: 3px solid #481AE7;
+    cursor: pointer;
+}
+.seleccionadoB {
+    border-bottom: 3px solid rgb(68, 222, 236);
+    cursor: pointer;
+}
+.elementos:hover {
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(154, 222, 228);
+}
+#elementos {
+    color: gray;
+}
+#elementos:hover {
+    color: black;
+}
+#anvorguesa {
+    cursor: pointer;
+}
+#equis {
+    cursor: pointer;
+}
+#aprende {
+    font-weight: 700;
+    line-height: 45px;
+}
+.activa {
+    color: #481AE7;
+}
+#img {
+    object-fit: cover;
+}
+#carta {
+    transition: .50s;
+}
+#carta:hover {
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5);
+}
+#cartaA {
+    transition: .50s;
+}
+#cartaA:hover {
+    border: 1px solid #481AE7;
+    border-radius: 2px;
+}
+#btncarta {
+    background-color: transparent;
+    color: #481AE7;
+    border-width: 2px;
+    border-color: #481AE7;
+    border-radius: 4px;
+    transition: .12s;
+}
+#btncarta:hover {
+    background-color: #481AE7;
+    color: white;
+}
+#foot {
+    background-color: #070512;
+}

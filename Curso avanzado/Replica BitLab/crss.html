@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BITLAB - Digital Skills Academy</title>
+    <link rel="Shortcut Icon" href="BITLAB.ico" type="image/x-icon"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Estilos/crss.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navscroll fixed w-full flex justify-between py-6 md:py-0 lg:px-20 px-2">
+            <div id="navmenu" class="hidden w-full h-screen fixed overflow-hidden">
+                <div class="bg-white h-full p-8">
+                    <div class="flex justify-between mb-12">
+                        <a href="index.html"><img src="Estilos/svg/BITLAB_Azul.svg" width="120" height="25"></a>
+                        <div>
+                            <img id="equis" src="Estilos/svg/Equis_Azul.svg">
+                        </div>
+                    </div>
+                    <h3 id="aprende" class="text-4xl mb-6">¿Qué deseas<br>conocer?</h3>
+                    <div class="flex flex-col">
+                        <a href="prtnrs.html" id="elementos" class="block text-xl font-medium mt-4 py-4 mr-4">Aliados</a>
+                        <a class="seleccionadoA block text-xl font-medium mt-4 py-4 mr-4">Cursos</a>
+                        <a href="bcs.html" id="elementos" class="block text-xl font-medium mt-4 py-4 mr-4">Becas</a>
+                        <a href="evnts.html" id="elementos" class="block text-xl font-medium mt-4 py-4 mr-4">Eventos</a>
+                    </div>
+                </div>
+            </div>   
+            <div class="flex items-center text-white px-2 sm:px-6">
+                    <a href="index.html"><img id="blanco" src="Estilos/svg/BITLAB_Azul.svg" width="115" height="25"/></a>
+            </div>
+            <div class="w-full hidden md:inline-block lg:flex sm:items-center sm:w-auto">
+                <div class="font-medium pt-2">
+                    <a href="prtnrs.html" class="elementos block sm:inline-block my-0 px-6 py-1">Aliados</a>
+                    <a class="elementos seleccionadoB block sm:inline-block my-0 px-6 py-1">Cursos</a>
+                    <a href="bcs.html" class="elementos block sm:inline-block my-0 px-6 py-1">Becas</a>
+                    <a href="evnts.html" class="elementos block sm:inline-block my-0 px-6 py-1">Eventos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="block md:hidden">
+                <div class="flex items-center px-2">
+                    <img id="anvorguesa" src="Estilos/svg/Anvorguesa_Azul.svg">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="flex-1 pt-24">
+            <div class="bg-gray-300 mb-12 md:px-0 h-16 overflow-y-scroll md:overflow-hidden text-center pt-5 scrolling-touch">
+                <div class="float-none inline-block md:inline px-8 md:px-4 xl:px-16 mb-5 w-full md:w-1/6 text-center">
+                    <a href="#" class="categoria1 activa text-sm font-semibold">Todos los cursos</a>
+                </div>
+                <div class="float-none inline-block md:inline px-8 md:px-4 xl:px-16 mb-5 w-full md:w-1/6 text-center">
+                    <a href="#" class="categoria2 text-sm font-semibold">Desarrollo de software</a>
+                </div>
+                <div class="float-none inline-block md:inline px-8 md:px-4 xl:px-16 my-5 w-full md:w-1/6 text-center">
+                    <a href="#" class="categoria3 text-sm font-semibold">Estrategia Digital</a>
+                </div>
+                <div class="float-none inline-block md:inline px-8 md:px-4 xl:px-16 my-5 w-full md:w-1/6 text-center">
+                    <a href="#" class="categoria4 text-sm font-semibold">Diseño</a>
+                </div>
+                <div class="float-none inline-block md:inline px-16 md:px-10 xl:px-24 my-6 w-full md:w-1/6 text-center">
+                    <a href="#" class="categoria5 text-sm font-semibold">Emprendimiento</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row md:justify between md:items-center mb-16 mx-auto px-4 xl:px-20">
+                <div class="mb-6 md:mb-0">
+                    <h2 id="aprende" class="text-3xl mb-4">Cursos Disponibles</h2>
+                    <p class="xl:w-3/5">Te presentamos los cursos completos que BITLAB tiene para ti, encuentra el que deseas realizar e inscríbete y aprende de la mano de profesionales en el área.</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="mr-4 flex">
+                        <input type="checkbox" id="gratis" name="gratis" value="gratis" class="mt-2 mr-1">Gratis</input>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="pagado" name="pagado" value="pagado" class="mt-2 mr-1">Pagado</input>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row md:flex-wrap mb-12 px-2 sm:px-12 md:px-2 xl:px-16">
+                <div class="pagado desarrollo w-full md:w-1/2 mb-6 px-4">
+                    <div id="carta" class="flex w-full flex-col xl:flex-row xl:h-full rounded">
+                        <div class="w-full xl:w-2/5 overflow-hidden h-full">
+                            <a href="fendvlp.html"><img id="img" class="w-full h-64 xl:h-full rounded rounded-b-none xl:rounded-l xl:rounded-r-none" src="Estilos/crss/coding.png"></a>
+                        </div>
+                        <div id="cartaA" class="flex flex-col h-full w-full xl:w-3/5 border border-grey-800 rounded rounded-t-none xl:rounded-r xl:rounded-l-none">
+                            <a href="fendvlp.html">
+                            <div class="p-5 border-b border-grey-100 flex-1 h-full w-full">
+                                <h2 class="text-xl mb-5 font-medium">Frontend Developer</h2>
+                                <p class="text-sm font-bold">Roxana González</p>
+                                <p class="text-sm mt-3 pr-4">Con este curso podrás desarrollar sitios web del mundo real usando las últimas tecnologías implementadas en la industria. Además, también aprenderás a desarrol...</p>
+                                </a>
+                            </div>
+                            <a href="fendvlp.html">
+                            <div class="flex justify-between items-center px-4 py-6">
+                                <h3 class="text-lg font-bold">108 horas</h3>
+                                <div id="btncarta" class="px-4 py-1 text-sm">Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagado desarrollo w-full md:w-1/2 mb-6 px-4">
+                    <div id="carta" class="flex w-full flex-col xl:flex-row xl:h-full rounded">
+                        <div class="w-full xl:w-2/5 overflow-hidden h-full">
+                            <a href="bckndvlp.html"><img id="img" class="w-full h-64 xl:h-full rounded rounded-b-none xl:rounded-l xl:rounded-r-none" src="Estilos/crss/dev.png"></a>
+                        </div>
+                        <div id="cartaA" class="flex flex-col h-full w-full xl:w-3/5 border border-grey-800 rounded rounded-t-none xl:rounded-r xl:rounded-l-none">
+                            <a href="bckndvlp.html">
+                            <div class="p-5 border-b border-grey-100 flex-1 h-full w-full">
+                                <h2 class="text-xl mb-5 font-medium">Backend Developer</h2>
+                                <p class="text-sm font-bold">Roxana González</p>
+                                <p class="text-sm mt-3 pr-4">Con este curso podrás desarrollar backends del mundo real usando las últimas tecnologías en la industria.Lograrás realizar backends comprendie...</p>
+                                </a>
+                            </div>
+                            <a href="bckndvlp.html">
+                            <div class="flex justify-between items-center px-4 py-6">
+                                <h3 class="text-lg font-bold">108 horas</h3>
+                                <div id="btncarta" class="px-4 py-1 text-sm">Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagado emprendimiento w-full md:w-1/2 mb-6 px-4">
+                    <div id="carta" class="flex w-full flex-col xl:flex-row xl:h-full rounded">
+                        <div class="w-full xl:w-2/5 overflow-hidden h-full">
+                            <a href="emprnd.html"><img id="img" class="w-full h-64 xl:h-full rounded rounded-b-none xl:rounded-l xl:rounded-r-none" src="Estilos/crss/emprendimiento.png"></a>
+                        </div>
+                        <div id="cartaA" class="flex flex-col h-full w-full xl:w-3/5 border border-grey-800 rounded rounded-t-none xl:rounded-r xl:rounded-l-none">
+                            <a href="emprnd.html">
+                            <div class="p-5 border-b border-grey-100 flex-1 h-full w-full">
+                                <h2 class="text-xl mb-5 font-medium">Emprendimiento</h2>
+                                <p class="text-sm font-bold">Carlos Moreno</p>
+                                <p class="text-sm mt-3 pr-4">Aprenderás los concemptos básicos del emprendimiento, herramientas de validación, las diferentes etapas y lograrás tener las bases para la organización y...</p>
+                                </a>
+                            </div>
+                            <a href="emprnd.html">
+                            <div class="flex justify-between items-center px-4 py-6">
+                                <h3 class="text-lg font-bold">48 horas</h3>
+                                <div id="btncarta" class="px-4 py-1 text-sm">Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagado estrategia w-full md:w-1/2 mb-6 px-4">
+                    <div id="carta" class="flex w-full flex-col xl:flex-row xl:h-full rounded">
+                        <div class="w-full xl:w-2/5 overflow-hidden h-full">
+                            <a href="strtg.html"><img id="img" class="w-full h-64 xl:h-full rounded rounded-b-none xl:rounded-l xl:rounded-r-none" src="Estilos/crss/estrategia.png"></a>
+                        </div>
+                        <div id="cartaA" class="flex flex-col h-full w-full xl:w-3/5 border border-grey-800 rounded rounded-t-none xl:rounded-r xl:rounded-l-none">
+                            <a href="strtg.html">
+                            <div class="p-5 border-b border-grey-100 flex-1 h-full w-full">
+                                <h2 class="text-xl mb-5 font-medium">Estrategia digital elevada</h2>
+                                <p class="text-sm font-bold">Fabiola León</p>
+                                <p class="text-sm mt-3 pr-4">Con este curso comprenderás los beneficios de la metodología inbound marketing y sabrás cómo aplicarla. Entenderás el entorno digital y las posibilida...</p>
+                                </a>
+                            </div>
+                            <a href="strtg.html">
+                            <div class="flex justify-between items-center px-4 py-6">
+                                <h3 class="text-lg font-bold">48 horas</h3>
+                                <div id="btncarta" class="px-4 py-1 text-sm">Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gratis desarrollo w-full md:w-1/2 mb-6 px-4">
+                    <div id="carta" class="flex w-full flex-col xl:flex-row xl:h-full rounded">
+                        <div class="w-full xl:w-2/5 overflow-hidden h-full">
+                            <a href="intrprg.html"><img id="img" class="w-full h-64 xl:h-full rounded rounded-b-none xl:rounded-l xl:rounded-r-none" src="Estilos/crss/coding.png"></a>
+                        </div>
+                        <div id="cartaA" class="flex flex-col h-full w-full xl:w-3/5 border border-grey-800 rounded rounded-t-none xl:rounded-r xl:rounded-l-none">
+                            <a href="intrprg.html">
+                            <div class="p-5 border-b border-grey-100 flex-1 h-full w-full">
+                                <h2 class="text-xl mb-5 font-medium">Introducción a la programación</h2>
+                                <p class="text-sm font-bold">Roxana González</p>
+                                <p class="text-sm mt-3 pr-4">Aprende conceptos básicos de programación y herramientas para entrar al mundo del desarrollo web y móvil. Este curso es un requisito para personas con...</p>
+                                </a>
+                            </div>
+                            <a href="intrprg.html">
+                            <div class="flex justify-between items-center px-4 py-6">
+                                <h3 class="text-lg font-bold">10 horas</h3>
+                                <div id="btncarta" class="px-4 py-1 text-sm">Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gratis estrategia w-full md:w-1/2 mb-6 px-4">
+                    <div id="carta" class="flex w-full flex-col xl:flex-row xl:h-full rounded">
+                        <div class="w-full xl:w-2/5 overflow-hidden h-full">
+                            <a href="intrstrtg.html"><img id="img" class="w-full h-64 xl:h-full rounded rounded-b-none xl:rounded-l xl:rounded-r-none" src="Estilos/crss/laptop.png"></a>
+                        </div>
+                        <div id="cartaA" class="flex flex-col h-full w-full xl:w-3/5 border border-grey-800 rounded rounded-t-none xl:rounded-r xl:rounded-l-none">
+                            <div class="p-5 border-b border-grey-100 flex-1">
+                                <a href="intrstrtg.html" class="h-full w-full">
+                                <h2 class="text-xl mb-5 font-medium">Introducción a la estrategia digital</h2>
+                                <p class="text-sm font-bold">Fabiola León</p>
+                                <p class="text-sm mt-3 pr-4">Aprende conceptos básicos, los medios digitales de tendencia, lo básico de un plan de pauta, buenas prácticas, hacks y herramientas para iniciar u opt...</p>
+                                </a>
+                            </div>
+                            <a href="intrstrtg.html">
+                            <div class="flex justify-between items-center px-4 py-6">
+                                <h3 class="text-lg font-bold">4 horas</h3>
+                                <div id="btncarta" class="px-4 py-1 text-sm">Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gratis emprendimiento w-full md:w-1/2 mb-6 px-4">
+                    <div id="carta" class="flex w-full flex-col xl:flex-row xl:h-full rounded">
+                        <div class="w-full xl:w-2/5 overflow-hidden h-full">
+                            <a href="intremprnd.html"><img id="img" class="w-full h-64 xl:h-full rounded rounded-b-none xl:rounded-l xl:rounded-r-none" src="Estilos/crss/learn.png"></a>
+                        </div>
+                        <div id="cartaA" class="flex flex-col h-full w-full xl:w-3/5 border border-grey-800 rounded rounded-t-none xl:rounded-r xl:rounded-l-none">
+                            <a href="intremprnd.html">
+                            <div class="p-5 border-b border-grey-100 flex-1 h-full w-full">
+                                <h2 class="text-xl mb-5 font-medium">Introducción al emprendimiento</h2>
+                                <p class="text-sm font-bold">Carlos Moreno</p>
+                                <p class="text-sm mt-3 pr-4">Descubre el camino para emprender en El Salvador, desde construir tu modelo de negocio, herramientas, aliados y opciones de fondeo hasta cómo preparar...</p>
+                                </a>
+                            </div>
+                            <a href="intremprnd.html">
+                            <div class="flex justify-between items-center px-4 py-6">
+                                <h3 class="text-lg font-bold">4 horas</h3>
+                                <div id="btncarta" class="px-4 py-1 text-sm">Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gratis diseño w-full md:w-1/2 mb-6 px-4">
+                    <div id="carta" class="flex w-full flex-col xl:flex-row xl:h-full rounded">
+                        <div class="w-full xl:w-2/5 overflow-hidden h-full">
+                            <a href="uxui.html"><img id="img" class="w-full h-64 xl:h-full rounded rounded-b-none xl:rounded-l xl:rounded-r-none" src="Estilos/crss/tablet.png"></a>
+                        </div>
+                        <div id="cartaA" class="flex flex-col h-full w-full xl:w-3/5 border border-grey-800 rounded rounded-t-none xl:rounded-r xl:rounded-l-none">
+                            <a href="uxui.html">
+                            <div class="p-5 border-b border-grey-100 flex-1 h-full w-full">
+                                <h2 class="text-xl mb-5 font-medium">Introducción al diseño UX/UI</h2>
+                                <p class="text-sm font-bold">Luis Pinto</p>
+                                <p class="text-sm mt-3 pr-4">Conocerás la diferencia entre la Experiencia de Usuario y la Interfaz de Usuario, entenderás el significado de cada uno, y aprenderás procesos y tips...</p>
+                                </a>
+                            </div>
+                            <a href="uxui.html">
+                            <div class="flex justify-between items-center px-4 py-6">
+                                <p class="text-lg font-bold">4 horas</p>
+                                <div id="btncarta" class="px-4 py-1 text-sm">Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="foot">
+            <div class="h-auto md:h-16 flex flex-col md:flex-row justify-between items-center mx-8">
+                <img src="Estilos/svg/BITLAB.svg" class="h-6 mt-8 md:mt-0 lg:pl-12">
+                <p class="text-white mt-6 ml-4 md:mt-0">Todos los derechos reservados, 2019 © BITLAB</p>
+                <div class="flex m-4 md:my-0 items-center">
+                    <img src="Estilos/hmpg/phone.png" width="20" height="20" class="mr-3">
+                    <a href="" class="text-white mr-3">2200-4197</a>
+                    <a id="facebook" href=""><img id="cambioF" src="Estilos/svg/facebook.svg" class="ml-4" width="20" height="20"></a>
+                    <a id="instagram" href=""><img id="cambioI" src="Estilos/svg/instagram.svg" class="ml-6" width="20" height="20"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/crss.min.js"></script>
+</body>
+</html>    
