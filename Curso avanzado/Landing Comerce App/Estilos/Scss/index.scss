@@ -1,0 +1,82 @@
+body {
+    color: white;
+    font-size: 17px;
+}
+#mainnav {
+    background: linear-gradient(90deg, #031FC6 0%, #8BDA5A 101.79%);
+}
+#comerce {
+    width: 240px;
+    height: 50px;
+    background-image: url(Imágenes/svg/commerce_dsktp.svg);
+    background-size: 240px 50px;    
+}
+@media screen and (max-width: 639px) {
+    #comerce {
+    width: 200px;
+    height: 30px;
+    background: url(Imágenes/svg/commerce_mob.svg);
+    background-size: 200px 30px;
+}
+}
+.nohref {
+    cursor: pointer;
+}
+.elementos {
+    border-top: 5px solid transparent;
+    transition: .30s
+}
+.elementos:hover {
+    border-top: 5px solid white;
+}
+.seleccionado {
+    border-top: 5px solid white;
+}
+#inicio {
+    cursor: pointer;
+}
+#anvorguesa {
+    cursor: pointer;
+}
+#equis {
+    cursor: pointer;
+}
+.side-menu {
+    transition: .50s all;
+    transform: translateX(100%);
+}
+.show-in {
+    transform: translateX(0) !important; 
+}
+#welcome {
+    background: linear-gradient(270deg, #8BDA5A -10.32%, #1435B9 100%);
+}
+.bg-blue {
+    background-color: #1435B9;
+}
+.f-blue {
+    color: #1435B9;
+}
+.bg-green {
+    background-color: #8BDA5A
+}
+.btncomer {
+    background-color: #8BDA5A;
+    transition: .12s;
+}
+.btncomer:hover {
+    background-color: rgb(63, 150, 96);
+}
+.Qs {
+    cursor: pointer;
+}
+#btncontact {
+    background-color: #1435B9;
+    transition: .12s;
+}
+#btncontact:hover {
+    background-color: rgb(86, 119, 253);
+}
+#foot {
+    background-color: #111111;
+}

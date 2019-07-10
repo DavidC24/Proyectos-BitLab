@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Comerce App</title>
+    <link rel="Shortcut Icon" href="COMMERCE.ico" type="image/x-icon"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Estilos/comercio.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="mainnav" class="fixed w-full flex items-center">
+            <div class="flex w-full items-center justify-between px-2 pb-1">
+                <div class="flex items-center py-4 sm:pt-0 sm:pb-2 pl-1">
+                    <a class="nohref"><div id="comerce"></div></a>
+                </div>
+                <div class="hidden md:flex">
+                    <div class="text-sm font-semibold mr-12">
+                        <a href="index.html" class="elementos pt-3 px-5 mx-3 text-xl">Inicio</a>
+                        <a href="#" class="elementos seleccionado pt-3 px-5 mx-3 text-xl">Comercio</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <div class="flex items-center px-2">
+                        <img id="anvorguesa" src="Estilos/Imágenes/svg/Anvorguesa.svg">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div id="navmenu" class="h-screen w-screen md:hidden ml-20 md:ml-40 bg-white side-menu text-black fixed">
+                <div class="p-3">
+                    <img id="equis" class="ml-auto mr-24" src="Estilos/Imágenes/svg/Equis.svg" height="50" width="50">
+                </div>
+                <div class="p-8">
+                    <ul class="">
+                        <li><a href="index.html" class="text-3xl font-semibold">Inicio</a></li>
+                        <li id="comercio" class="text-green-500 text-3xl font-semibold mt-8">Comercio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="welcome" class="h-screen">
+            <div class="flex w-full h-full px-4 md:px-24 lg:px-48 xl:px-64 items-center text-center">
+                <div class="flex flex-col">
+                    <h1 class="text-3xl lg:text-6xl font-extrabold leading-snug mb-2">Mejora tus servicios con nosotros</h1>
+                    <p class="xl:px-16">¡La primera aplicación móvil que te permite generar resevas en restaurantes, doctores, estilo de vida y más en un solo lugar!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col lg:flex-row w-full py-10 bg-gray-200">
+            <div class="flex w-full lg:w-1/2 items-center my-3">
+                <img src="Estilos/Imágenes/cmrc/mac_beneficios.png" class="w-full left-0 h-auto">
+            </div>
+            <div class="flex flex-col w-full lg:w-1/2 px-10">
+                <h2 class="text-4xl font-extrabold my-5 f-blue">Beneficios de negocio</h2>
+                <div class="py-4">
+                    <strong class="text-black">Date a conocer</strong>
+                    <p class="text-gray-600">Nuestra aplicación es una plataforma para automatizar y crecer tu empresa sin la necesidad de perder el toque humano que siempre es necesario.</p>
+                </div>
+                <div class="py-4">
+                    <strong class="text-black">Controla tus tiempos</strong>
+                    <p class="text-gray-600">Se más eficiente. Controla los tiempos efectivos para cada servicio ofrecido con el objetivo de eliminar tiempos muertos, mejorando tu capacidad y por ende tus ingresos.</p>
+                </div>
+                <div class="py-4">
+                    <strong class="text-black">Crecemos contigo</strong>
+                    <p class="text-gray-600">Nuestros planes de pago se han realizado pensando en ti y en el bienestar de tu empresa, acomodándose a tus requerimientos e ingresos.</p>
+                </div>
+                <div class="py-4">
+                    <strong class="text-black">Mejora continua</strong>
+                    <p class="text-gray-600">Nuestro equipo ya cuenta con mejoras por venir, incluyendo la capacidad de captar pagos de tus clientes por medio de la app, manejo de contabilidad, etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col lg:flex-row w-full py-6">
+            <div class="flex w-full items-center lg:w-1/2 my-3 px-6 xl:px-24 mb-6">
+                <div class="flex flex-col">
+                    <h2 class="text-black text-3xl font-extrabold mb-5 leading-tight">Reduce la posibilidad de que tu cita sea cancelada o que tu cliente no se presente</h2>
+                    <p class="text-gray-600">A través de una comunicación automática entre tu establecimiento y tu cliente, se reducen las probabilidades de “no-shows”, proporcionando un mejor seguimiento a cada cita programada, sin la necesidad de que tu o cualquiera de tus empleados pierda el tiempo tratando de ponerse en contacto con cada uno de tus clientes.</p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full lg:w-1/2 pl-2 lg:pl-32 xl:pl-2 items-end right-0">
+                <img src="Estilos/Imágenes/cmrc/calendario_1.png">
+                <img src="Estilos/Imágenes/cmrc/calendario_2.png">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-blue flex flex-col lg:flex-row w-full py-6">
+            <div class="flex w-full items-center lg:w-1/2 my-3 px-6 xl:px-24 mb-6">
+                <div class="flex flex-col">
+                    <h2 class="text-3xl font-extrabold mb-5 leading-tight">Reportería al instante</h2>
+                    <p>Al contratar nuestro paquete Premium tienes la oportunidad de obtener toda la reporteria necesaria para el manejo adecuado y acertado de tu negocio. Desde reportes de venta generales a reportes de venta específicos de cada empleado, consumidor, servicio/producto, etc. Obtendrás insight sobre cada uno de tus clientes actuales y potenciales.</p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full lg:w-1/2 pl-2 lg:pl-32 xl:pl-4 items-end right-0">
+                <img src="Estilos/Imágenes/cmrc/reporteria.png">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="w-full py-20 px-4">
+            <div class="py-10 text-center text-black px-6">
+                <h3 class="text-4xl font-extrabold mb-4">¡Únete a nuestros comercios!</h3>
+                <p>Guía general de uso de la aplicación y preguntas frecuentes</p>
+            </div>
+            <div class="flex flex-wrap mt-20">
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-12">
+                    <img src="Estilos/Imágenes/cmrc/SubWay.png">      
+                </div>
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-12">
+                    <img src="Estilos/Imágenes/cmrc/Andián.png">
+                </div>
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-10">
+                    <img src="Estilos/Imágenes/cmrc/BW.png">
+                </div>
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-10">
+                    <img src="Estilos/Imágenes/cmrc/DeliKat.png">
+                </div>
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-10">
+                    <img src="Estilos/Imágenes/cmrc/Dennys.png">
+                </div>
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-10">
+                    <img src="Estilos/Imágenes/cmrc/DonLi.png">
+                </div>
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-10">
+                    <img src="Estilos/Imágenes/cmrc/Equino.png">
+                </div>
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-10">
+                    <img src="Estilos/Imágenes/cmrc/Epic.png">
+                </div>
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-10">
+                    <img src="Estilos/Imágenes/cmrc/Fishería.png">
+                </div>
+                <div class="w-full flex justify-center items-center md:w-1/2 lg:w-1/4 mb-10">
+                    <img src="Estilos/Imágenes/cmrc/Koi.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col xl:flex-row w-full py-20 bg-blue-900">
+            <div class="flex xl:w-1/3 items-center xl:px-4">
+                <div class="flex flex-col justify-center px-6">
+                    <h3 class="text-4xl font-extrabold mb-6 leading-tight">Planes de servicios</h3>
+                    <p>Sé parte de nuestros socios estratégicos. Únete a TapApp para llegar a más clientes y aumentar tus ventas.</p>
+                </div>
+            </div>
+            <div class="flex flex-col xl:flex-row xl:w-2/3 p-6">
+                <div class="xl:w-1/2 py-4 xl:p-4">
+                    <div class="top-gradient w-full h-6 -mb-2 rounded-t-lg"></div>
+                    <div class="w-full h-full bg-white rounded-b p-6">
+                        <div class="my-3">
+                            <h3 class="text-gray-600 font-extrabold text-2xl text-center">PLAN BÁSICO</h3>
+                            <strong class="text-center block text-black py-2">Beneficios</strong>
+                            <li class="py-2 text-gray-700">Uso ilimitado de nuestra aplicación móvil</li>
+                            <li class="py-2 text-gray-700">Múmero de reservas: ilimitadas</li>
+                            <li class="py-2 text-gray-700">Recordatorios de reservas a tus clientes</li>
+                            <li class="py-2 text-gray-700">Calificaciones de tus clientes</li>
+                            <li class="py-2 text-gray-700">Acceso a tu propio web service en donde podrás:</li>
+                            <div class="pl-4">
+                                <li class="py-2 text-gray-700">Manejar tus reservas</li>
+                                <li class="py-2 text-gray-700">Agregar reservas</li>
+                                <li class="py-2 text-gray-700">Guardar información sobre tus clientes</li>
+                                <li class="py-2 text-gray-700">Modificar horarios de trabajo</li>
+                                <li class="py-2 text-gray-700">Soporte y ayuda</li>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="#" id="btn" class="font-semibold mx-auto px-8 py-3 rounded">Elegir plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:w-1/2 py-2 xl:p-4">
+                    <div class="top-gradient w-full h-6 -mb-2 rounded-t-lg"></div>
+                    <div class="w-full h-full bg-white rounded-b p-6">
+                        <div class="my-3">
+                            <h3 class="text-gray-600 font-extrabold text-2xl text-center">PLAN PREMIUM</h3>
+                            <strong class="text-center block text-black py-2">Beneficios</strong>
+                            <li class="py-2 text-gray-700">El plan premium incluye todo lo que el plan básico <strong>más</strong>:</li>
+                            <div class="pl-4">
+                                <li class="py-2 text-gray-700">Ventas</li>
+                                <li class="py-2 text-gray-700">Reservas</li>
+                                <li class="py-2 text-gray-700">Clientes</li>
+                                <li class="py-2 text-gray-700">Equipo</li>
+                                <li class="py-2 text-gray-700">Tus promociones</li>
+                            </div>
+                            <li class="py-2 text-gray-700">Podrás observar opiniones y críticas de tus clientes</li>
+                            <li class="py-2 text-gray-700">Podrás tener hasta 4 promociones activas al mes</li>
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="#" id="btn" class="font-semibold mx-auto mt-8 px-8 py-3 rounded">Elegir plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col bg-gray-200 items-center px-3 py-12">
+            <div class="text-center text-black mb-6">
+                <h2 class="font-extrabold text-4xl">Contáctanos</h2>
+            </div>
+            <div class="w-full lg:w-2/3 bg-white rounded py-12">
+                <form class="flex flex-col lg:flex-row flex-wrap text-black">
+                    <div class="flex flex-col lg:flex-row w-full mb-8">
+                        <div class="flex flex-col w-full lg:w-1/2 px-5 mb-4">
+                            <label for="nombre" class="f-blue font-bold mb-3">Nombre</label>
+                            <input type="text" id="nombre" placeholder="Cameron Rogers" class="border border-blue-200 focus:outline-none p-2">
+                        </div>
+                        <div class="flex flex-col w-full lg:w-1/2 px-5">
+                            <label for="mensaje" class="f-blue font-bold mb-3">Mensaje</label>
+                            <input type="text" id="mensaje" placeholder="Escribe tu consulta" class="border border-blue-200 focus:outline-none p-2">
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row w-full mb-8">
+                        <div class="flex flex-col w-full lg:w-1/2 px-5 mb-4">
+                            <label for="numero" class="f-blue font-bold mb-3">Teléfono</label>
+                            <input type="text" id="numero" placeholder="77777777" class="border border-blue-200 focus:outline-none p-2">
+                        </div>
+                        <div class="flex flex-col w-full lg:w-1/2 px-5">
+                            <label for="correo" class="f-blue font-bold mb-3">Correo electrónico</label>
+                            <input type="email" id="correo" placeholder="cameron@hotmail.com" class="border border-blue-200 focus:outline-none p-2">
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full p-2">
+                        <button type="submit" id="btn" class="mx-auto px-16 py-2 rounded text-white">Enviar mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="foot">
+            <div class="flex flex-col items-center p-8">
+                <div class="flex w-full justify-between items-center mb-6">
+                    <img src="Estilos/Imágenes/svg/commerce_mob.svg">
+                    <div class="flex items-center">
+                        <a href=""><img src="Estilos/Imágenes/svg/facebook.svg" class="mx-3" width="20" height="20"></a>
+                        <a href=""><img src="Estilos/Imágenes/svg/instagram.svg" class="mx-3" width="20" height="20"></a>
+                        <a href=""><img src="Estilos/Imágenes/svg/twitter.svg" class="mx-3" width="20" height="20"></a>
+                    </div>
+                </div>
+                <div class="flex flex-col w-full lg:flex-row lg:justify-start items-center lg:mb-2 text-center">
+                    <p class="text-gray-600">© Comerce. Todos los derechos reservados, 2019</p>
+                </div>
+                <div class="flex flex-col w-full lg:flex-row lg:justify-end items-center lg:-mt-8">
+                    <a href="" class="text-gray-600 hover:text-gray-500 mx-3">Términos y Condiciones</a>
+                    <span class="hidden lg:flex text-gray-600">|</span>
+                    <a href="" class="text-gray-600 hover:text-gray-500 mx-3">Políticas de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/comercio.min.js"></script>
+</body>
+</html>
