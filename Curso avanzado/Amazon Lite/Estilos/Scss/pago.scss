@@ -1,0 +1,44 @@
+.progress {
+  background: linear-gradient(0deg, rgb(226, 175, 44) 60%, rgb(255, 123, 0) 100%);
+  top: 2px;
+}
+.progressicon {
+  left: -0.25rem;
+  bottom: 0.1rem;
+}
+.paso1 {
+  color: #E2A301;
+}
+.paso2 {
+  color: #FA7800;
+}
+#areasilver {
+  background-color: #F2F2F2;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+}
+.underlined:hover {
+  text-decoration: underline 
+}
+.btnsilver {
+  background: linear-gradient(360deg, #E8E8E8 -69.31%, #FDFDFD 100%);
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+.btnsilver:hover {
+  background: linear-gradient(360deg, rgb(207, 206, 206) -69.31%, rgb(243, 242, 242) 100%);
+}
+.btngold {
+  background: linear-gradient(360deg, #EFC25C 9.31%, #F8E7C1 100%);
+  border: 1px solid #9C7E37;
+  border-radius: 4px;
+}
+.btngold:hover {
+  background: linear-gradient(360deg, rgb(240, 185, 58) 9.31%, rgb(248, 224, 172) 100%);
+}
+#card-element {
+  width: 600px
+}
+#degrad {
+  background: linear-gradient(180deg, #F2F2F2 0%, rgba(255, 255, 255, 0) 50.49%);
+}
