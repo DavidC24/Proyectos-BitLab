@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="Shortcut Icon" href="AMAZON.ico" type="image/x-icon"/>
+  <title>Resultados para: Zapatos</title>
+  <link rel="stylesheet" href="Estilos/tailwind.min.css">
+  <link rel="stylesheet" href="Estilos/result.min.css">
+</head>
+<body>
+  <header>
+    <nav id="top" class="flex md:hidden">
+      <div class="flex flex-col pt-2 w-full">
+        <div class="flex flex-row border-b-2 border-gray-600 px-2 pb-1">
+          <div class="w-1/12 flex justify-center">
+            <img id="anvorguesa" src="Estilos/Imagenes/svg/Anvorguesa.svg" class="p-px">
+          </div>
+          <div class="w-10/12 flex justify-between px-2">
+            <a href="index.html">
+              <img src="Estilos/Imagenes/svg/amazon.svg" width="85">
+            </a>
+            <a href="sesion.html" class="text-xs tracking-tight pt-2 pr-1">Identificarse</a>
+          </div>
+          <div class="w-1/12">
+            <img src="Estilos/Imagenes/svg/image.svg" width="45" class="cursor-pointer">
+          </div>
+        </div>
+        <div class="flex flex-row border-b-2 border-gray-600 p-2">
+          <div class="w-10/12">
+            <input type="text" placeholder="Buscar" class="rounded-l text-black px-2 py-1 outline-none">
+          </div>
+        <div>
+          <button id="btnbuscar" class="rounded-r py-2 px-4 h-8">
+            <img src="Estilos/Imagenes/svg/buscar.svg" width="22" class="-mt-1">
+          </button>
+        </div>
+      </div>
+      <div id="top2" class="flex border-b-2 border-gray-600 p-2">
+        <img src="Estilos/Imagenes/svg/lugar.svg">
+        <p class="text-sm ml-2 pt-1">Enviar a El Salvador</p>
+      </div>
+    </div>
+    <div id="navmenu" class="flex flex-col h-screen md:hidden bg-white side-menu text-black fixed">
+        <div id="top" class="flex flex-col p-2">
+            <div class="flex justify-between flex-row">
+                <a href="sesion.html" class="text-xl text-white pt-1 ml-1 mr-24">Hola, identifícate</a>
+                <img id="closeside" src="Estilos/Imagenes/svg/Equis.svg">
+            </div>
+            <div class="flex flex-row text-white mt-2">
+                <button class="sidebtn flex-auto m-1 p-2 text-sm leading-tight font-bold">Mi<br>cuenta</button>
+                <button class="sidebtn flex-auto m-1 p-2 text-sm leading-tight font-bold">Pedidos</button>
+                <button class="sidebtn flex-auto m-1 p-2 text-sm leading-tight font-bold">Volver a<br>comprar</button>
+            </div>
+        </div>
+        <div class="px-8">
+            <ul>
+                <li class="pt-8 pb-4">Todos</li>
+                <li class="py-4">Hogar y cocina</li>
+                <li class="py-4">Moda para todos</li>
+                <li class="py-4">Actividades al aire libre</li>
+                <li class="py-4">Tarjetas de regalo</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <nav id="top" class="hidden md:flex">
+    <div class="flex flex-col p-2 w-full">
+      <div class="flex flex-row">
+        <div class="w-1/6 flex justify-center ml-3">
+          <a href="index.html">
+            <img src="Estilos/Imagenes/svg/amazon.svg" width="160">
+          </a>
+        </div>
+        <div class="flex flex-row my-3 w-3/6 xl:w-full ml-8">
+          <div class="h-8">
+            <select class="bg-gray-300 rounded-l-lg text-black text-sm px-3 py-1 h-full outline-none">
+              <option>Todos</option>
+              <option>Hogar y Cocina</option>
+              <option>Moda para todos</option>
+              <option>Actividades al Aire libre</option>
+              <option>Tarjetas de regalo</option>
+            </select>
+          </div>
+          <div class="w-5/12 lg:w-7/12 xl:w-9/12">
+            <input type="text" class="text-black px-2 py-1 outline-none">
+          </div>
+          <div class="w-1/12">
+            <button id="btnbuscar" class="rounded-r-lg p-2 h-8">
+              <img src="Estilos/Imagenes/svg/buscar.svg" width="16">
+            </button>
+          </div>
+        </div>
+        <div class="text-sm font-semibold w-2/6">
+          <p class="pt-2 lg:pt-8 ml-4">Servicio al cliente 24/7. <a href="#">Más información</a>
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-row">
+        <div class="w-4/12 lg:w-2/12 ml-4">
+          <a href="#">
+            <div id="navelement" class="flex flex-row leading-tight p-1">
+              <img src="Estilos/Imagenes/svg/lugar.svg" class="mr-2">
+              <div class="flex flex-col">
+                <p class="text-xs">Enviar a</p>
+                <p class="text-sm font-semibold">El Salvador</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="flex flex-row text-sm w-6/12 xl:w-full ml-6 pr-8">
+          <div id="navelement" class="px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="font-bold">Departamentos</p>
+            <img src="Estilos/Imagenes/svg/expandir.svg" width="10" class="ml-2 mb-2">
+          </div>
+          <div id="navelement" class="px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Ofertas</p>
+          </div>
+          <div id="navelement" class="px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">TuAmazon.com</p>
+          </div>
+          <div id="navelement" class="hidden xl:flex px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Tarjetas de regalo</p>
+          </div>
+          <div id="navelement" class="hidden xl:flex px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Ayuda</p>
+          </div>
+          <div id="navelement" class="hidden xl:flex px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Listas</p>
+          </div>
+          <div id="navelement" class="hidden xl:flex px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Vender</p>
+          </div>
+        </div> 
+          <div class="flex flex-row w-4/5 lg:w-1/3">
+            <div class="leading-tight text-sm">
+              <a href="sesion.html">
+                <div id="navelement" class="px-2 py-1">
+                  <p class="text-xs text-gray-400">Hola, identifícate</p>
+                  <div class="flex">
+                    <p class="font-semibold">Cuenta y listas</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div id="navelement" class="cursor-pointer px-2 pt-4 mt-px">
+              <p class="text-sm font-semibold">Pedidos</p>
+            </div>
+            <div id="navelement" class="cursor-pointer flex px-2">
+              <div class="flex flex-col">
+                <p class="text-orange-500 text-sm font-semibold ml-3 mt-2">0</p>
+                <img src="Estilos/Imagenes/svg/image.svg" width="30" class="-mt-5">
+              </div>
+              <p class="text-sm font-semibold pt-4">Carrito</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="resultados" class="flex justify-between flex-col md:flex-row px-6 py-2">
+    <p class="text-sm pt-2 ml-4">1 a 48 de 135 resultados para <strong>Moda para todos: </strong><strong class="text-red-600">Zapatos</strong></p>
+    <select id="btnsilver" class="px-3 py-1 my-2 md:my-0 font-semibold">
+      <option>Ordenar por: Artículos destacados</option>
+      <option>Ordenar por: Orden alfabético</option>
+    </select>
+  </div>
+  <section>
+    <div class="flex flex-row">
+      <div class="hidden md:flex flex-col md:w-1/3 lg:w-1/4 xl:w-1/5 px-5 my-5 text-sm font-semibold border-r border-gray-400">
+        <p class="font-bold">Departamentos</p>
+        <p class="underlined cursor-pointer text-gray-600 py-px">< Moda</p>
+        <p class="font-bold ml-3">Zapatos</ul>
+        <p class="underlined cursor-pointer text-gray-600 ml-5 py-px">Deportes</p>
+        <p class="underlined cursor-pointer text-gray-600 ml-5 py-px">Tenis de moda</p>
+        <p class="underlined cursor-pointer text-gray-600 ml-5 py-px">Zapatos bajos</p>
+        <p class="underlined cursor-pointer text-gray-600 ml-5 py-px">Mocasines y Zapatos sin talón</p>
+        <p class="underlined cursor-pointer text-gray-600 ml-5 py-px">Zuevos</p>
+        <p class="underlined cursor-pointer text-gray-600 ml-5 py-px">Exteriores</p>
+        <p class="underlined cursor-pointer text-gray-600 ml-5 py-px">Zapatillas</p>
+        <p class="underlined cursor-pointer text-gray-600 ml-5 py-px">Sandalias</p>
+        <p class="underlined cursor-pointer text-gray-600 ml-5 py-px">Pantuflas</p>
+        <p class="font-bold mt-6 mb-2">Opinión media de los clientes</p>
+        <div class="flex flex-row mb-1">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <p class="text-gray-600 ml-4">o más</p>
+        </div>
+        <div class="flex flex-row mb-1">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <p class="text-gray-600 ml-4">o más</p>
+        </div>
+        <div class="flex flex-row mb-1">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <p class="text-gray-600 ml-4">o más</p>
+        </div>
+        <div class="flex flex-row">
+          <img src="Estilos/Imagenes/svg/estrella.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <img src="Estilos/Imagenes/svg/estrella_vacia.svg" width="20" class="mr-px">
+          <p class="text-gray-600 ml-4">o más</p>
+        </div>
+        <p class="font-bold mt-6">Moda de Amazon</p>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">Mejores marcas</p>
+        </div>
+        <p class="font-bold mt-6">Marca</p>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">Caramella Bubble</p>
+        </div>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">DLGJPA</p>
+        </div>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">Gracosy</p>
+        </div>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">Herstyle</p>
+        </div>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">Adidas</p>
+        </div>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">Luoika</p>
+        </div>
+        <a href="#" class="underlined text-blue-600 mt-1">Ver más</a>
+        <p class="font-bold mt-5">Precio</p>
+        <p class="text-gray-600 mt-1">Menos de $25</p>
+        <p class="text-gray-600 mt-1">$25 a $50</p>
+        <p class="text-gray-600 mt-1">$50 a $100</p>
+        <p class="text-gray-600 mt-1 mb-1">$100 a $200</p>
+        <div class="flex flex-row">
+          <input type="text" placeholder="$ Min" class="border rounded border-gray-400 p-2">
+          <input type="text" placeholder="$ Max" class="border rounded border-gray-400 p-2 mx-1">
+          <button id="btnsilver" type="button" class="font-semibold px-5">Ir</button>
+        </div>
+        <p class="font-bold mt-6">Ancho de calzado</p>
+        <div class="flex flex-wrap -mx-1">
+          <div class="px-px md:w-1/4 xl:w-1/5">
+            <button type="button" class="btnsize py-1 px-2 mr-1 my-1">XXN</button>
+          </div>
+          <div class="px-px md:w-1/4 xl:w-1/5">
+            <button type="button" class="btnsize py-1 px-3 mr-1 my-1">XN</button>
+          </div>
+          <div class="px-px md:w-1/4 xl:w-1/5">
+            <button type="button" class="btnsize py-1 px-4 mr-1 my-1">N</button>
+          </div>
+          <div class="px-px md:w-1/4 xl:w-1/5">
+            <button type="button" class="border rounded border-gray-400 py-1 px-4 mr-1 my-1">M</button>
+          </div>
+          <div class="px-px md:w-1/4 xl:w-1/5">
+            <button type="button" class="btnsize py-1 px-4 mr-1 my-1">W</button>
+          </div>
+          <div class="px-px md:w-1/4 xl:w-1/5">
+            <button type="button" class="btnsize py-1 px-3 mr-1 my-1">XW</button>
+          </div>
+          <div class="px-px md:w-1/4 xl:w-1/5">
+            <button type="button" class="btnsize py-1 px-2 mr-1 my-1">XXW</button>
+          </div>
+        </div>
+        <p class="font-bold mt-6">Ancho de calzado</p>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">Menos de 1"</p>
+        </div>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">1 a 1 3/4"</p>
+        </div>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">2 a 2 3/4"</p>
+        </div>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">3 a 3 3/4"</p>
+        </div>
+        <div class="flex flex-row mt-1">
+          <input type="checkbox" class="mt-1">
+          <p class="text-gray-600 ml-2">4" y más</p>
+        </div>  
+      </div>
+      <div class="flex flex-col w-4/5 mx-5 md:mx-10 my-5 md:my-10 font-bold text-sm">
+        <div class="flex flex-wrap flex-row -px-2">
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-6">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">MEGNYA Women’s flip Flops Sandals Arch Support Comfortable Walking Summer Water Beachs Slipper</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">21</p><p class="text-xs font-semibold mr-2 ml-px">99</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">29</p><p class="text-xs font-semibold ml-px">99</p>
+              </div>
+              <p class="text-xs text-gray-600 mt-3"><strong class="text-black font-semibold bg-green-600 mr-1 p-1">Ahorra 5%</strong>con cupón (talles/colores limitados)</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-20">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">Dlgjpa - Zapatillas de agua para mujer de secado rápido y ligero</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2 pb-2 mb-px">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">15</p><p class="text-xs font-semibold mr-2 ml-px">99</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">39</p><p class="text-xs font-semibold ml-px">99</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-16">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">Herstyle Keetton Sandalias planas con correa al tobillo y dedos abiertos para mujer</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2 mb-2">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">24</p><p class="text-xs font-semibold mr-2 ml-px">90</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">68</p><p class="text-xs font-semibold ml-px">60</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-12">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">Caramella Bubble - Zapatillas para mujer con puntera abierta, de espuma viscoelástica de algodón, para verano, para mujer</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2 pb-2 -mb-px">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">18</p><p class="text-xs font-semibold mr-2 ml-px">88</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">13</p><p class="text-xs font-semibold ml-px">88</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-6">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">MEGNYA Women’s flip Flops Sandals Arch Support Comfortable Walking Summer Water Beachs Slipper</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">21</p><p class="text-xs font-semibold mr-2 ml-px">99</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">29</p><p class="text-xs font-semibold ml-px">99</p>
+              </div>
+              <p class="text-xs text-gray-600 mt-3"><strong class="text-black font-semibold bg-green-600 mr-1 p-1">Ahorra 5%</strong>con cupón (talles/colores limitados)</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-20">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">Dlgjpa - Zapatillas de agua para mujer de secado rápido y ligero</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2 pb-2 mb-px">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">15</p><p class="text-xs font-semibold mr-2 ml-px">99</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">39</p><p class="text-xs font-semibold ml-px">99</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-16">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">Herstyle Keetton Sandalias planas con correa al tobillo y dedos abiertos para mujer</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2 mb-2">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">24</p><p class="text-xs font-semibold mr-2 ml-px">90</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">68</p><p class="text-xs font-semibold ml-px">60</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-12">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">Caramella Bubble - Zapatillas para mujer con puntera abierta, de espuma viscoelástica de algodón, para verano, para mujer</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2 pb-2 -mb-px">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">18</p><p class="text-xs font-semibold mr-2 ml-px">88</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">13</p><p class="text-xs font-semibold ml-px">88</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-6">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">MEGNYA Women’s flip Flops Sandals Arch Support Comfortable Walking Summer Water Beachs Slipper</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">21</p><p class="text-xs font-semibold mr-2 ml-px">99</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">29</p><p class="text-xs font-semibold ml-px">99</p>
+              </div>
+              <p class="text-xs text-gray-600 mt-3"><strong class="text-black font-semibold bg-green-600 mr-1 p-1">Ahorra 5%</strong>con cupón (talles/colores limitados)</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-20">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">Dlgjpa - Zapatillas de agua para mujer de secado rápido y ligero</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2 pb-2 mb-px">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">15</p><p class="text-xs font-semibold mr-2 ml-px">99</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">39</p><p class="text-xs font-semibold ml-px">99</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-16">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">Herstyle Keetton Sandalias planas con correa al tobillo y dedos abiertos para mujer</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2 mb-2">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">24</p><p class="text-xs font-semibold mr-2 ml-px">90</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">68</p><p class="text-xs font-semibold ml-px">60</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-2">
+            <div class="flex flex-col border-b border-gray-400 pt-3 pb-12">
+              <div class="flex justify-center p-2">
+                <img src="Estilos/Imagenes/detail/toallas_negro.png">
+              </div>
+              <p class="underlined font-semibold text-sm leading-tight">Caramella Bubble - Zapatillas para mujer con puntera abierta, de espuma viscoelástica de algodón, para verano, para mujer</p>
+              <div class="flex flex-row py-2 mt-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/media_estrella.svg" class="mr-px">
+                <img src="Estilos/Imagenes/svg/abajo.svg" width="12" class="ml-2">
+                <a href="#" class="underlined font-semibold text-sm leading-tight text-blue-600 px-2 mt-1">55,998</a>
+              </div>
+              <div class="flex flex-row mt-2 pb-2 -mb-px">
+                <p class="text-xs mr-px">USD</p><p class="text-2xl font-semibold -mt-2">18</p><p class="text-xs font-semibold mr-2 ml-px">88</p><p class="text-2xl font-semibold -mt-2">-</p><p class="text-xs ml-2 mr-px">USD</p><p class="text-2xl font-semibold -mt-2">13</p><p class="text-xs font-semibold ml-px">88</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-center border-b border-gray-400 py-2">
+          <img id="anterior" src="Estilos/Imagenes/svg/siguiente.svg">
+          <p class="text-sm font-normal text-gray-700 ml-3 mr-4 mt-2">Anterior</p>
+          <button type="button" class="border rounded border-red-600 text-sm text-red-600 py-2 px-4">1</button>
+          <button type="button" class="btnsize text-sm py-2 px-4 mx-2">2</button>
+          <button type="button" class="btnsize text-sm py-2 px-4">3</button>
+          <button id="btnsilver" type="button" class="flex flex-row font-semibold px-3 ml-2">
+            <p class="mr-4">Siguiente</p>
+            <img src="Estilos/Imagenes/svg/siguiente.svg" class="mt-px">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div id="foot" class="flex flex-col">
+      <a id="btntop" href="#top" class="w-full flex justify-center">
+        <p class="text-sm py-4">Inicio de página</p>
+      </a>
+    <div class="flex flex-wrap flex-row py-8 mx-auto">
+      <div class="flex flex-col w-1/2 lg:w-1/4 pl-5 pr-2 py-2 md:px-10">
+        <h3 class="font-bold">Conócenos</h3>
+        <a href="#" class="underlined text-sm">Trabaja en Amazon</a>
+        <a href="#" class="underlined text-sm">Blog</a>
+        <a href="#" class="underlined text-sm">Acerca de Amazon</a>
+        <a href="#" class="underlined text-sm">Relaciones con los inversionistas</a>
+        <a href="#" class="underlined text-sm">Dispositivos Amazon</a>
+        <a href="#" class="underlined text-sm">Visita un centro logístico de Amazon</a>
+      </div>
+      <div class="flex flex-col w-1/2 lg:w-1/4 pl-2 pr-5 py-2 md:px-10">
+        <h3 class="font-bold">Gana dinero con nosotros</h3>
+        <a href="#" class="underlined text-sm">Vende en Amazon</a>
+        <a href="#" class="underlined text-sm">Vende tus servicios en Amazon</a>
+        <a href="#" class="underlined text-sm">Vende en Amazon Business</a>
+        <a href="#" class="underlined text-sm">Vende tus apps en Amazon</a>
+        <a href="#" class="underlined text-sm">Programa de afiliados</a>
+        <a href="#" class="underlined text-sm">Anuncia tus productos</a>
+        <a href="#" class="underlined text-sm">Publica tu libro en Kindle</a>
+        <a href="#" class="underlined text-sm">> Ver más</a>
+      </div>
+      <div class="flex flex-col w-1/2 lg:w-1/4 pl-5 pr-2 py-2 md:px-10">
+        <h3 class="font-bold">Productos de pago Amazon</h3>
+        <a href="#" class="underlined text-sm">Compra con puntos</a>
+        <a href="#" class="underlined text-sm">Recarga tu saldo</a>
+        <a href="#" class="underlined text-sm">Convertidor de monedas de Amazon</a>
+      </div>
+      <div class="flex flex-col w-1/2 lg:w-1/4 pl-2 pr-5 py-2 md:px-10">
+        <h3 class="font-bold">Podemos ayudarte</h3>
+        <a href="#" class="underlined text-sm">Tu cuenta</a>
+        <a href="#" class="underlined text-sm">Tus pedidos</a>
+        <a href="#" class="underlined text-sm">Tarifas de envío y políticas</a>
+        <a href="#" class="underlined text-sm">Devoluciones y reemplazos</a>
+        <a href="#" class="underlined text-sm">Administrar dispositivos</a>
+        <a href="#" class="underlined text-sm">Amazon Assistant</a>
+        <a href="#" class="underlined text-sm">Ayuda</a>
+      </div>
+    </div>
+    <div id="foot" class="w-full flex justify-center">
+      <a href="index.html"><img src="Estilos/Imagenes/svg/amazon.svg" width="150" class="py-4"></a>
+    </div>
+  </footer>
+  <script src="Scripts/jquery-3.4.1.min.js"></script>
+  <script src="Scripts/result.min.js"></script>
+</body>
+</html>

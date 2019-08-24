@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="Shortcut Icon" href="AMAZON.ico" type="image/x-icon"/>
   <title>Direccion de envío</title>
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Estilos/tailwind.min.css">
   <link rel="stylesheet" href="Estilos/direccion.min.css">
 </head>
 <body>
@@ -19,11 +19,12 @@
       </div>
       <div class="w-3/5 mt-3 ml-3">
         <div class="progress w-1/3 py-px relative"></div>
-        <div class="flex flex-row text-sm tracking-tight border-t-2 border-gray-400">
+        <div class="flex flex-row text-sm 
+         border-t-2 border-gray-400">
           <div class="flex w-full justify-around mb-4">
             <p class="paso1 mt-4">INICIAR SESIÓN</p>
             <div class="flex flex-col">
-              <img src="Estilos/Imagenes/svg/carretilla_negro.svg"class="progressicon -mt-5 -mb-px relative">
+              <img src="Estilos/Imagenes/svg/carretilla_negro.svg" class="progressicon -mt-5 -mb-px relative">
               <p class="paso2 mt-2">ENVÍO Y PAGO</p>
             </div>
             <p class="text-gray-400 mt-4">OPCIÓN DE REGALO</p>
@@ -35,9 +36,11 @@
     </div>
   </section>
   <section class="mx-12">
-    <h1 class="text-3xl font-semibold tracking-tight">Seleccionar una dirección de envío</h1>
+    <h1 class="text-3xl font-semibold 
+    ">Seleccionar una dirección de envío</h1>
     <p class="text-sm my-3">¿Aparece a continuación la dirección que deseas utilizar? Si es así, haz clic en el botón "Enviar a esta dirección". O puedes <a href="#" class="underlined text-blue-600">introducir una nueva dirección de envío.</a></p>
-    <h2 class="text-2xl font-semibold tracking-tight mt-16 mb-2">Scottie Frankie Pairpoint Nacey</h2>
+    <h2 class="text-2xl font-semibold 
+     mt-16 mb-2">Scottie Frankie Pairpoint Nacey</h2>
     <p>641 Charing Cross Junction</p>
     <p>Long Beach Art. 1234</p>
     <p>Casa #22</p>
@@ -45,21 +48,26 @@
     <p>Teléfono celular: 72702036</p>
     <div id="direccion" class="flex flex-col mt-5 mb-12">
       <a href="pago.html">
-        <button id="btngold" type="button" class="w-full font-semibold tracking-tight py-2 mb-2">Entregar a esta dirección</button>
+        <button id="btngold" type="button" class="w-full font-semibold 
+         py-2 mb-2">Entregar a esta dirección</button>
       </a>
       <div class="flex flex-row w-full mt-2">
-        <button id="btnsilver" type="button" class="font-semibold tracking-tight w-1/2 mr-1">Editar</button>
-        <button id="btnsilver" type="button" class="font-semibold tracking-tight w-1/2 ml-1">Eliminar</button>
+        <button id="btnsilver" type="button" class="font-semibold 
+         w-1/2 mr-1">Editar</button>
+        <button id="btnsilver" type="button" class="font-semibold 
+         w-1/2 ml-1">Eliminar</button>
       </div>
     </div>
   </section>
   <section>
     <div id="degrad">
-      <h3 class="text-xl tracking-tight font-semibold px-12 pt-8 mb-4">Agregar otra dirección</h3>
+      <h3 class="text-xl 
+       font-semibold px-12 pt-8 mb-4">Agregar otra dirección</h3>
       <p class="text-sm px-12">Asegúrate de hacer clic en "Enviar a esta dirección" cuando hayas terminado.</p>
     </div>
     <div class="px-12">
-      <form id="form" class="text-sm tracking-tight font-semibold">
+      <form id="form" class="text-sm 
+       font-semibold">
         <div class="my-4">
           <p class="mb-1">Nombre / Quién recibe:</p>
           <input type="text" class="border rounded border-gray-500 p-2 w-full">
@@ -93,9 +101,11 @@
           <input type="text" class="border rounded border-gray-500 p-2 w-full">
         </div>
       </form>
-      <h3 class="text-xl tracking-tight font-semibold">Agregar instrucciones de entrega (opcional)</h3>
+      <h3 class="text-xl 
+       font-semibold">Agregar instrucciones de entrega (opcional)</h3>
       <div class="my-4">
-        <form id="form" class="text-sm tracking-tight font-semibold w-1/2 mb-20">
+        <form id="form" class="text-sm 
+         font-semibold w-1/2 mb-20">
           <p class="mb-1">¿Necesitamos indicaciones adicionales para encontrar esta dirección?</p>
           <textarea class="border rounded border-gray-500 p-2 w-full" placeholder="Proporciónanos detalles de la descripción del edificio, un punto de referencia cercano o alguna otra señal para llegar." rows="4"></textarea>
           <div class="my-4">
@@ -106,12 +116,15 @@
       </div>
     </div>
   </section>
-  <footer id="degrad" class="pt-6 pb-12">
+  <footer id="degrad" class="pt-6 pb-12 px-5">
     <div class="flex flex-col mx-auto">
       <div class="flex justify-center text-xs mb-4">
-        <a href="#" class="tracking-tight text-blue-600 hover:underline mx-4">Condiciones de uso</a>
-        <a href="#" class="tracking-tight text-blue-600 hover:underline mx-4">Aviso de privacidad</a>
-          <a href="#" class="tracking-tight text-blue-600 hover:underline mx-4">Ayuda</a>
+        <a href="#" class="
+         text-blue-600 hover:underline mx-4">Condiciones de uso</a>
+        <a href="#" class="
+         text-blue-600 hover:underline mx-4">Aviso de privacidad</a>
+          <a href="#" class="
+           text-blue-600 hover:underline mx-4">Ayuda</a>
       </div>
       <div class="flex justify-center">
         <p class="text-xs">© 1996-2019, Amazon.com, Inc. o afiliados. Todos los derechos reservados.</p>

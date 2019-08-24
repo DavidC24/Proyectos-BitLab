@@ -6,134 +6,198 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="Shortcut Icon" href="AMAZON.ico" type="image/x-icon"/>
     <title>Amazon Lite</title>
+    <link rel="stylesheet" href="Estilos/tailwind.min.css">
     <link rel="stylesheet" href="Estilos/index.min.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Estilos/slick.min.css"/>
 </head>
-<body>
-    <header>
-        <nav id="top" class="flex">
-            <div class="flex flex-col p-2 w-full">
-                <div class="flex flex-row">
-                    <div class="w-1/6 flex justify-center pr-3">
-                        <a href="#">
-                            <img src="Estilos/Imagenes/svg/amazon.svg" width="160">
-                        </a>
-                    </div>
-                    <div class="flex flex-row my-3 w-3/5">
-                        <div class="h-8">
-                            <select class="bg-gray-300 rounded-l-lg text-black text-sm px-3 py-1 h-full outline-none">
-                                <option>Todos</option>
-                                <option>Hogar y Cocina</option>
-                                <option>Actividades al Aire libre</option>
-                                <option>Tarjetas de regalo</option>
-                            </select>
-                        </div>
-                        <div class="w-9/12">
-                            <input type="text" class="text-black px-2 py-1 outline-none">
-                        </div>
-                        <div class="w-1/12">
-                            <button id="btnbuscar" class="rounded-r-lg p-2">
-                                <img src="Estilos/Imagenes/svg/buscar.svg" width="16">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="text-sm font-semibold w-1/5">
-                        <p class="pt-8 ml-2">Servicio al cliente 24/7. <a href="#">Más información</a></p>
-                    </div>
-                </div>
-                <div class="flex flex-row">
-                    <div class="w-1/6 px-12">
-                        <a href="#">
-                            <div id="navelement" class="flex flex-row leading-tight p-1">
-                                <img src="Estilos/Imagenes/svg/lugar.svg" class="mr-2">
-                                <div class="flex flex-col">
-                                    <p class="text-xs">Enviar a</p>
-                                    <p class="text-sm font-semibold">El Salvador</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="flex flex-row justify-between text-sm w-3/5 pr-8">
-                        <div id="navelement" class="p-2 flex flex-row cursor-pointer">
-                            <p class="font-bold">Departamentos</p>
-                            <img src="Estilos/Imagenes/svg/expandir.svg" width="10" class="ml-2 mt-1">
-                        </div>
-                        <div id="navelement" class="p-2 flex flex-row cursor-pointer">
-                            <p class="text-gray-400">Ofertas del día</p>
-                        </div>
-                        <div id="navelement" class="p-2 flex flex-row cursor-pointer">
-                            <p class="text-gray-400">TuAmazon.com</p>
-                        </div>
-                        <div id="navelement" class="p-2 flex flex-row cursor-pointer">
-                            <p class="text-gray-400">Tarjetas de regalo</p>
-                        </div>
-                        <div id="navelement" class="p-2 flex flex-row cursor-pointer">
-                            <p class="text-gray-400">Ayuda</p>
-                        </div>
-                        <div id="navelement" class="p-2 flex flex-row cursor-pointer">
-                            <p class="text-gray-400">Listas</p>
-                        </div>
-                        <div id="navelement" class="p-2 flex flex-row cursor-pointer">
-                            <p class="text-gray-400">Vender</p>
-                        </div>
-                    </div> 
-                    <div class="flex flex-row w-1/5">
-                        <div class="leading-tight text-sm">
-                            <a href="sesion.html">
-                                <div id="navelement" class="px-2 py-1">
-                                    <p class="text-xs text-gray-400">Hola, identifícate</p>
-                                    <div class="flex">
-                                        <p class="font-semibold">Cuenta y listas</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div id="navelement" class="px-2 pt-4 mt-px">
-                            <p class="text-sm font-semibold">Pedidos</p>
-                        </div>
-                        <div id="navelement" class="flex px-2">
-                            <div class="flex flex-col">
-                                <p class="text-orange-500 text-sm font-semibold ml-3 mt-2">0</p>
-                                <img src="Estilos/Imagenes/svg/image.svg" width="30" class="-mt-5">
-                            </div>
-                            <p class="text-sm font-semibold pt-4">Carrito</p>
-                        </div>
-                    </div>
-                </div>
+<body class="overflow-x-hidden">
+  <header>
+    <nav id="top" class="flex md:hidden">
+      <div class="flex flex-col pt-2 w-full">
+        <div class="flex flex-row border-b-2 border-gray-600 px-2 pb-1">
+          <div class="w-1/12 flex justify-center">
+            <img id="anvorguesa" src="Estilos/Imagenes/svg/Anvorguesa.svg" class="p-px">
+          </div>
+          <div class="w-10/12 flex justify-between px-2">
+            <a href="#">
+              <img src="Estilos/Imagenes/svg/amazon.svg" width="85">
+            </a>
+            <a href="sesion.html" class="text-xs tracking-tight pt-2 pr-1">Identificarse</a>
+          </div>
+          <div class="w-1/12">
+            <img src="Estilos/Imagenes/svg/image.svg" width="45" class="cursor-pointer">
+          </div>
+        </div>
+        <div class="flex flex-row border-b-2 border-gray-600 p-2">
+          <div class="w-10/12">
+            <input type="text" placeholder="Buscar" class="rounded-l text-black px-2 py-1 outline-none">
+          </div>
+        <div>
+          <button id="btnbuscar" class="rounded-r py-2 px-4 h-8">
+            <img src="Estilos/Imagenes/svg/buscar.svg" width="22" class="-mt-1">
+          </button>
+        </div>
+      </div>
+      <div id="top2" class="flex border-b-2 border-gray-600 p-2">
+        <img src="Estilos/Imagenes/svg/lugar.svg">
+        <p class="text-sm ml-2 pt-1">Enviar a El Salvador</p>
+      </div>
+    </div>
+    <div id="navmenu" class="flex flex-col h-screen md:hidden bg-white side-menu text-black fixed">
+        <div id="top" class="flex flex-col p-2">
+            <div class="flex justify-between flex-row">
+                <a href="sesion.html" class="text-xl text-white pt-1 ml-1 mr-24">Hola, identifícate</a>
+                <img id="closeside" src="Estilos/Imagenes/svg/Equis.svg">
             </div>
-        </nav>
-    </header>
+            <div class="flex flex-row text-white mt-2">
+                <button class="sidebtn flex-auto m-1 p-2 text-sm leading-tight font-bold">Mi<br>cuenta</button>
+                <button class="sidebtn flex-auto m-1 p-2 text-sm leading-tight font-bold">Pedidos</button>
+                <button class="sidebtn flex-auto m-1 p-2 text-sm leading-tight font-bold">Volver a<br>comprar</button>
+            </div>
+        </div>
+        <div class="px-8">
+            <ul>
+                <li class="pt-8 pb-4">Todos</li>
+                <li class="py-4">Hogar y cocina</li>
+                <li class="py-4">Moda para todos</li>
+                <li class="py-4">Actividades al aire libre</li>
+                <li class="py-4">Tarjetas de regalo</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <nav id="top" class="hidden md:flex">
+    <div class="flex flex-col p-2 w-full">
+      <div class="flex flex-row">
+        <div class="w-1/6 flex justify-center ml-3">
+          <a href="#">
+            <img src="Estilos/Imagenes/svg/amazon.svg" width="160">
+          </a>
+        </div>
+        <div class="flex flex-row my-3 w-3/6 xl:w-full ml-8">
+          <div class="h-8">
+            <select class="bg-gray-300 rounded-l-lg text-black text-sm px-3 py-1 h-full outline-none">
+              <option>Todos</option>
+              <option>Hogar y Cocina</option>
+              <option>Moda para todos</option>
+              <option>Actividades al Aire libre</option>
+              <option>Tarjetas de regalo</option>
+            </select>
+          </div>
+          <div class="w-5/12 lg:w-7/12 xl:w-9/12">
+            <input type="text" class="text-black px-2 py-1 outline-none">
+          </div>
+          <div class="w-1/12">
+            <button id="btnbuscar" class="rounded-r-lg p-2 h-8">
+              <img src="Estilos/Imagenes/svg/buscar.svg" width="16">
+            </button>
+          </div>
+        </div>
+        <div class="text-sm font-semibold w-2/6">
+          <p class="pt-2 lg:pt-8 ml-4">Servicio al cliente 24/7. <a href="#">Más información</a>
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-row">
+        <div class="w-4/12 lg:w-2/12 ml-4">
+          <a href="#">
+            <div id="navelement" class="flex flex-row leading-tight p-1">
+              <img src="Estilos/Imagenes/svg/lugar.svg" class="mr-2">
+              <div class="flex flex-col">
+                <p class="text-xs">Enviar a</p>
+                <p class="text-sm font-semibold">El Salvador</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="flex flex-row text-sm w-6/12 xl:w-full ml-6 pr-8">
+          <div id="navelement" class="px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="font-bold">Departamentos</p>
+            <img src="Estilos/Imagenes/svg/expandir.svg" width="10" class="ml-2 mb-2">
+          </div>
+          <div id="navelement" class="px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Ofertas</p>
+          </div>
+          <div id="navelement" class="px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">TuAmazon.com</p>
+          </div>
+          <div id="navelement" class="hidden xl:flex px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Tarjetas de regalo</p>
+          </div>
+          <div id="navelement" class="hidden xl:flex px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Ayuda</p>
+          </div>
+          <div id="navelement" class="hidden xl:flex px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Listas</p>
+          </div>
+          <div id="navelement" class="hidden xl:flex px-2 pt-3 flex flex-row cursor-pointer">
+            <p class="text-gray-400">Vender</p>
+          </div>
+        </div> 
+          <div class="flex flex-row w-4/5 lg:w-1/3">
+            <div class="leading-tight text-sm">
+              <a href="sesion.html">
+                <div id="navelement" class="px-2 py-1">
+                  <p class="text-xs text-gray-400">Hola, identifícate</p>
+                  <div class="flex">
+                    <p class="font-semibold">Cuenta y listas</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div id="navelement" class="cursor-pointer px-2 pt-4 mt-px">
+              <p class="text-sm font-semibold">Pedidos</p>
+            </div>
+            <div id="navelement" class="cursor-pointer flex px-2">
+              <div class="flex flex-col">
+                <p class="text-orange-500 text-sm font-semibold ml-3 mt-2">0</p>
+                <img src="Estilos/Imagenes/svg/image.svg" width="30" class="-mt-5">
+              </div>
+              <p class="text-sm font-semibold pt-4">Carrito</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
     <section id="welcome">
-        <div class="flex flex-row pt-56 px-5 pb-8">
-            <div class="flex flex-col bg-white w-1/4 mx-4 px-4 py-6">
-                <h2 class="text-black font-bold tracking-tight text-xl">¿Necesitas ayuda?</h2>
-                <a href="#"><img src="Estilos/Imagenes/Index/caja.png" class="p-4 mb-8"></a>
-                <p class="text-black text-xs my-2">Más información sobre cómo comprar en Amazon</p>
-                <a href="#" class="underlined font-bold text-sm text-blue-600">Más información</a>
+        <div class="flex flex-wrap xl:flex-no-wrap flex-row pt-5 lg:px-5 md:pt-56 pb-8">
+            <div class="w-full md:w-1/2 xl:w-1/4">
+                <div class="flex flex-col bg-white m-4 px-4 py-6">
+                    <h2 class="text-black font-bold text-xl">¿Necesitas ayuda?</h2>
+                    <a href="#"><img src="Estilos/Imagenes/Index/caja.png" class="px-4 py-12 lg:py-20 xl:py-10 mb-8 lg:mb-3"></a>
+                    <p class="text-black text-xs my-2">Más información sobre cómo comprar en Amazon</p>
+                    <a href="#" class="underlined font-bold text-sm text-blue-600">Más información</a>
+                </div>
             </div>
-            <div class="flex flex-col bg-white w-1/4 mx-4 px-4 py-6">
-                <h2 class="text-black font-bold tracking-tight text-xl">Ofertas y promociones</h2>
-                <a href="#"><img src="Estilos/Imagenes/Index/regalo.png" class="p-4 h-64"></a>
-                <p class="text-black text-xs my-2">Ofertas en cada departamento</p>
-                <a href="#" class="underlined font-bold text-sm text-blue-600">Compra ahora</a>
+            <div class="px-4 w-full md:w-1/2 xl:w-1/4">
+                <div class="flex flex-col bg-white my-4 px-4 py-6">
+                    <h2 class="text-black font-bold text-xl">Ofertas y promociones</h2>
+                    <a href="#" class="flex justify-center"><img src="Estilos/Imagenes/Index/regalo.png" class="p-4"></a>
+                    <p class="text-black text-xs my-2">Ofertas en cada departamento</p>
+                    <a href="#" class="underlined font-bold text-sm text-blue-600">Compra ahora</a>
+                </div>
             </div>
-            <div class="flex flex-col bg-white w-1/4 mx-4 px-4 py-6">
-                <h2 class="text-black font-bold tracking-tight text-xl">Zapatos de vestir para hom...</h2>
-                <a href="#"><img src="Estilos/Imagenes/Index/zapatos.png" class="p-4 h-64"></a>
-                <p class="text-black text-xs my-2">Encuentra tus marcas favoritas</p>
-                <a href="#" class="underlined font-bold text-sm text-blue-600">Compra ahora</a>
+            <div class="px-4 w-full md:w-1/2 xl:w-1/4">
+                <div class="flex flex-col bg-white my-4 px-4 py-6">
+                    <h2 class="text-black font-bold text-xl">Zapatos de vestir para hom...</h2>
+                    <a href="result.html" class="flex justify-center"><img src="Estilos/Imagenes/Index/zapatos.png" class="px-4 mt-2 h-64"></a>
+                    <p class="text-black text-xs my-2">Encuentra tus marcas favoritas</p>
+                    <a href="result.html" class="underlined font-bold text-sm text-blue-600">Compra ahora</a>
+                </div>
             </div>
-            <div class="flex flex-col bg-white w-1/4 mx-4 px-4 py-6">
-                <h2 class="text-black font-bold tracking-tight leading-tight text-xl mb-8">Inicia sesión para vivir tu mejor experiencia</h2>
-                <a href="sesion.html" id="btngold" class="text-black text-sm text-center font-bold tracking-tight px-6 py-2">Inicia sesión de forma segura</a>
+            <div class="px-4 w-full md:w-1/2 xl:w-1/4">
+                <div class="flex flex-col bg-white my-4 px-4 py-6">
+                    <h2 class="text-black font-bold leading-tight text-xl mb-8">Inicia sesión para vivir tu mejor experiencia</h2>
+                    <a href="sesion.html" id="btngold" class="text-black text-sm text-center font-bold px-6 py-2">Inicia sesión de forma segura</a>
+                </div>
             </div>
         </div>
     </section>
-    <section class="bg-white mx-8 mb-8">
+    <section class="bg-white mx-6 md:mx-8 mb-8">
         <div class="flex flex-row px-8 pt-6">
-            <p class="text-black text-xl font-semibold tracking-tight mr-4">Lo más vendido en Hogar y Cocina</p>
-            <a href="#" class="underlined font-bold text-sm text-blue-600 pt-1">Ver más</a>
+            <p class="text-black text-md md:text-xl font-semibold mr-4">Lo más vendido en Hogar y Cocina</p>
+            <a href="#" class="underlined font-bold text-xs md:text-sm text-blue-600 pt-1">Ver más</a>
         </div>
         <div class="multiple-items flex">
             <div id="a1">
@@ -170,10 +234,10 @@
             </div>
         </div>
     </section>
-    <section class="bg-white mx-8 mb-16">
+    <section class="bg-white mx-6 md:mx-8 mb-16">
         <div class="flex flex-row px-8 pt-6">
-            <p class="text-black text-xl font-semibold tracking-tight mr-4">Lo más vendido en Deportes y Actividades al aire libre</p>
-            <a href="#" class="underlined font-bold text-sm text-blue-600 pt-1">Ver más</a>
+            <p class="text-black text-md md:text-xl font-semibold mr-4">Lo más vendido en Deportes y Actividades al aire libre</p>
+            <a href="#" class="underlined font-bold text-xs md:text-sm text-blue-600 pt-1">Ver más</a>
         </div>
         <div class="multiple-items flex">
             <div id="A1">
@@ -209,54 +273,53 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div id="foot" class="flex flex-col">
-            <a id="btntop" href="#top" class="w-full flex justify-center">
-                <p class="text-sm py-4">Inicio de página</p>
-            </a>
-            <div class="flex flex-row py-8 mx-auto">
-                <div class="flex flex-col w-1/4 px-10">
-                    <h3 class="font-bold">Conócenos</h3>
-                    <a href="#" class="underlined text-sm">Trabaja en Amazon</a>
-                    <a href="#" class="underlined text-sm">Blog</a>
-                    <a href="#" class="underlined text-sm">Acerca de Amazon</a>
-                    <a href="#" class="underlined text-sm">Relaciones con los inversionistas</a>
-                    <a href="#" class="underlined text-sm">Dispositivos Amazon</a>
-                    <a href="#" class="underlined text-sm">Visita un centro logístico de Amazon</a>
-                </div>
-                <div class="flex flex-col w-1/4 px-10">
-                    <h3 class="font-bold">Gana dinero con nosotros</h3>
-                    <a href="#" class="underlined text-sm">Vende en Amazon</a>
-                    <a href="#" class="underlined text-sm">Vende tus servicios en Amazon</a>
-                    <a href="#" class="underlined text-sm">Vende en Amazon Business</a>
-                    <a href="#" class="underlined text-sm">Vende tus apps en Amazon</a>
-                    <a href="#" class="underlined text-sm">Programa de afiliados</a>
-                    <a href="#" class="underlined text-sm">Anuncia tus productos</a>
-                    <a href="#" class="underlined text-sm">Publica tu libro en Kindle</a>
-                    <a href="#" class="underlined text-sm">> Ver más</a>
-                </div>
-                <div class="flex flex-col w-1/4 px-10">
-                    <h3 class="font-bold">Productos de pago Amazon</h3>
-                    <a href="#" class="underlined text-sm">Compra con puntos</a>
-                    <a href="#" class="underlined text-sm">Recarga tu saldo</a>
-                    <a href="#" class="underlined text-sm">Convertidor de monedas de Amazon</a>
-                </div>
-                <div class="flex flex-col w-1/4 px-10">
-                    <h3 class="font-bold">Podemos ayudarte</h3>
-                    <a href="#" class="underlined text-sm">Tu cuenta</a>
-                    <a href="#" class="underlined text-sm">Tus pedidos</a>
-                    <a href="#" class="underlined text-sm">Tarifas de envío y políticas</a>
-                    <a href="#" class="underlined text-sm">Devoluciones y reemplazos</a>
-                    <a href="#" class="underlined text-sm">Administrar dispositivos</a>
-                    <a href="#" class="underlined text-sm">Amazon Assistant</a>
-                    <a href="#" class="underlined text-sm">Ayuda</a>
-                </div>
-            </div>
-            <div id="foot" class="w-full flex justify-center">
-                <a href="#"><img src="Estilos/Imagenes/svg/amazon.svg" width="150" class="py-4"></a>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div id="foot" class="flex flex-col">
+      <a id="btntop" href="#top" class="w-full flex justify-center">
+        <p class="text-sm py-4">Inicio de página</p>
+      </a>
+    <div class="flex flex-wrap flex-row py-8 mx-auto">
+      <div class="flex flex-col w-1/2 lg:w-1/4 pl-5 pr-2 py-2 md:px-10">
+        <h3 class="font-bold">Conócenos</h3>
+        <a href="#" class="underlined text-sm">Trabaja en Amazon</a>
+        <a href="#" class="underlined text-sm">Blog</a>
+        <a href="#" class="underlined text-sm">Acerca de Amazon</a>
+        <a href="#" class="underlined text-sm">Relaciones con los inversionistas</a>
+        <a href="#" class="underlined text-sm">Dispositivos Amazon</a>
+        <a href="#" class="underlined text-sm">Visita un centro logístico de Amazon</a>
+      </div>
+      <div class="flex flex-col w-1/2 lg:w-1/4 pl-2 pr-5 py-2 md:px-10">
+        <h3 class="font-bold">Gana dinero con nosotros</h3>
+        <a href="#" class="underlined text-sm">Vende en Amazon</a>
+        <a href="#" class="underlined text-sm">Vende tus servicios en Amazon</a>
+        <a href="#" class="underlined text-sm">Vende en Amazon Business</a>
+        <a href="#" class="underlined text-sm">Vende tus apps en Amazon</a>
+        <a href="#" class="underlined text-sm">Programa de afiliados</a>
+        <a href="#" class="underlined text-sm">Anuncia tus productos</a>
+        <a href="#" class="underlined text-sm">Publica tu libro en Kindle</a>
+        <a href="#" class="underlined text-sm">> Ver más</a>
+      </div>
+      <div class="flex flex-col w-1/2 lg:w-1/4 pl-5 pr-2 py-2 md:px-10">
+        <h3 class="font-bold">Productos de pago Amazon</h3>
+        <a href="#" class="underlined text-sm">Compra con puntos</a>
+        <a href="#" class="underlined text-sm">Recarga tu saldo</a>
+        <a href="#" class="underlined text-sm">Convertidor de monedas de Amazon</a>
+      </div>
+      <div class="flex flex-col w-1/2 lg:w-1/4 pl-2 pr-5 py-2 md:px-10">
+        <h3 class="font-bold">Podemos ayudarte</h3>
+        <a href="#" class="underlined text-sm">Tu cuenta</a>
+        <a href="#" class="underlined text-sm">Tus pedidos</a>
+        <a href="#" class="underlined text-sm">Tarifas de envío y políticas</a>
+        <a href="#" class="underlined text-sm">Devoluciones y reemplazos</a>
+        <a href="#" class="underlined text-sm">Administrar dispositivos</a>
+        <a href="#" class="underlined text-sm">Amazon Assistant</a>
+        <a href="#" class="underlined text-sm">Ayuda</a>
+      </div>
+    </div>
+    <div id="foot" class="w-full flex justify-center">
+      <a href="#"><img src="Estilos/Imagenes/svg/amazon.svg" width="150" class="py-4"></a>
+    </div>
+  </footer>
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Scripts/slick.min.js"></script>
     <script src="Scripts/index.min.js"></script>
